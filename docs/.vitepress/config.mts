@@ -18,6 +18,10 @@ export default defineConfig({
           {
             text: '第1章 股票投资到底在赚什么钱',
             link: '/chapters/01-what-investors-earn'
+          },
+          {
+            text: '第2章 A股市场的基本结构',
+            link: '/chapters/02-a-share-market-structure'
           }
         ]
       }
