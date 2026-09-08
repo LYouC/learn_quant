@@ -5,6 +5,9 @@ export default defineConfig({
   title: 'A股量化选股课程',
   description: '面向程序员的 A 股金融、因子、量化与投资策略课程',
   cleanUrls: true,
+  markdown: {
+    math: true
+  },
   themeConfig: {
     siteTitle: 'A股量化选股课程',
     nav: [
@@ -22,6 +25,10 @@ export default defineConfig({
           {
             text: '第2章 A股市场的基本结构',
             link: '/chapters/02-a-share-market-structure'
+          },
+          {
+            text: '第3章 A股交易制度与真实约束',
+            link: '/chapters/03-trading-rules-and-constraints'
           }
         ]
       }
