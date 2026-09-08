@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: process.env.DOCS_BASE || '/',
   lang: 'zh-CN',
   title: 'A股量化选股课程',
   description: '面向程序员的 A 股金融、因子、量化与投资策略课程',
@@ -29,6 +30,10 @@ export default defineConfig({
           {
             text: '第3章 A股交易制度与真实约束',
             link: '/chapters/03-trading-rules-and-constraints'
+          },
+          {
+            text: '第4章 收益与风险的基本计算',
+            link: '/chapters/04-return-and-risk'
           }
         ]
       }
