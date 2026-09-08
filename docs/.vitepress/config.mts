@@ -36,6 +36,15 @@ export default defineConfig({
             link: '/chapters/04-return-and-risk'
           }
         ]
+      },
+      {
+        text: '第二部分：公司与财务',
+        items: [
+          {
+            text: '第5章 商业模式与公司竞争力',
+            link: '/chapters/05-business-model-and-competitive-advantage'
+          }
+        ]
       }
     ],
     outline: {
