@@ -47,6 +47,10 @@ export default defineConfig({
           {
             text: '第6章 利润表',
             link: '/chapters/06-income-statement'
+          },
+          {
+            text: '第7章 资产负债表',
+            link: '/chapters/07-balance-sheet'
           }
         ]
       }
