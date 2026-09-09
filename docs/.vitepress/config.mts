@@ -51,6 +51,14 @@ export default defineConfig({
           {
             text: '第7章 资产负债表',
             link: '/chapters/07-balance-sheet'
+          },
+          {
+            text: '第8章 现金流量表',
+            link: '/chapters/08-cash-flow-statement'
+          },
+          {
+            text: '第9章 三张报表之间的联系',
+            link: '/chapters/09-three-financial-statements'
           }
         ]
       }
