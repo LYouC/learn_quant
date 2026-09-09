@@ -43,6 +43,10 @@ export default defineConfig({
           {
             text: '第5章 商业模式与公司竞争力',
             link: '/chapters/05-business-model-and-competitive-advantage'
+          },
+          {
+            text: '第6章 利润表',
+            link: '/chapters/06-income-statement'
           }
         ]
       }
