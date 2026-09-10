@@ -72,6 +72,10 @@ export default defineConfig({
           {
             text: '第11章 估值的核心思想',
             link: '/chapters/11-core-ideas-of-valuation'
+          },
+          {
+            text: '第12章 常用估值指标',
+            link: '/chapters/12-common-valuation-metrics'
           }
         ]
       }
