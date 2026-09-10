@@ -59,6 +59,19 @@ export default defineConfig({
           {
             text: '第9章 三张报表之间的联系',
             link: '/chapters/09-three-financial-statements'
+          },
+          {
+            text: '第10章 公司盈利能力与经营效率',
+            link: '/chapters/10-profitability-and-operating-efficiency'
+          }
+        ]
+      },
+      {
+        text: '第三部分：估值与股价驱动',
+        items: [
+          {
+            text: '第11章 估值的核心思想',
+            link: '/chapters/11-core-ideas-of-valuation'
           }
         ]
       }
