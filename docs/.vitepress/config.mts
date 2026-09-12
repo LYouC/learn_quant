@@ -97,6 +97,10 @@ export default defineConfig({
           {
             text: '第16章 A股主要行业的财务特征',
             link: '/chapters/16-financial-characteristics-of-major-a-share-industries'
+          },
+          {
+            text: '第17章 市场风格与风格轮动',
+            link: '/chapters/17-market-style-and-rotation'
           }
         ]
       }
