@@ -101,6 +101,10 @@ export default defineConfig({
           {
             text: '第17章 市场风格与风格轮动',
             link: '/chapters/17-market-style-and-rotation'
+          },
+          {
+            text: '第18章 指数、ETF与投资基准',
+            link: '/chapters/18-index-etf-and-benchmark'
           }
         ]
       }
