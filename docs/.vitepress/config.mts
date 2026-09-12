@@ -76,6 +76,14 @@ export default defineConfig({
           {
             text: '第12章 常用估值指标',
             link: '/chapters/12-common-valuation-metrics'
+          },
+          {
+            text: '第13章 成长与预期',
+            link: '/chapters/13-growth-and-expectations'
+          },
+          {
+            text: '第14章 宏观环境如何影响A股',
+            link: '/chapters/14-macro-environment-and-a-shares'
           }
         ]
       }

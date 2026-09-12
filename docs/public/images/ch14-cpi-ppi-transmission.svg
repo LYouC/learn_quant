@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460" role="img" aria-labelledby="title desc">
+  <title id="title">CPI、PPI 与企业利润的典型传导关系</title>
+  <desc id="desc">原料价格和工业需求先影响工业生产领域价格，企业再根据库存、合同、竞争和定价权决定是否向消费端传导，最终影响居民消费价格和产业链利润分配。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font: 700 25px Arial, "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .label { font: 700 20px Arial, "Microsoft YaHei", sans-serif; fill: #0f172a; }
+      .body { font: 16px Arial, "Microsoft YaHei", sans-serif; fill: #334155; }
+      .note { font: 15px Arial, "Microsoft YaHei", sans-serif; fill: #475569; }
+      .arrow { stroke: #64748b; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1100" height="460" rx="20" fill="#f8fafc"/>
+  <text x="550" y="42" text-anchor="middle" class="title">从工业品价格到居民消费价格：中间隔着企业传导</text>
+
+  <rect x="35" y="90" width="225" height="205" rx="16" fill="#dbeafe" stroke="#60a5fa" stroke-width="2"/>
+  <text x="147" y="128" text-anchor="middle" class="label">上游环境</text>
+  <text x="58" y="168" class="body">• 原油、煤炭、金属</text>
+  <text x="58" y="200" class="body">• 工业需求与产能</text>
+  <text x="58" y="232" class="body">• 运输和进口成本</text>
+  <text x="58" y="264" class="body">• 供给冲击</text>
+
+  <rect x="325" y="90" width="220" height="205" rx="16" fill="#ffedd5" stroke="#fb923c" stroke-width="2"/>
+  <text x="435" y="128" text-anchor="middle" class="label">PPI</text>
+  <text x="435" y="158" text-anchor="middle" class="body">工业生产领域的价格</text>
+  <text x="348" y="198" class="body">典型观察：</text>
+  <text x="348" y="230" class="body">• 出厂价格变化</text>
+  <text x="348" y="262" class="body">• 上中游价格压力</text>
+
+  <rect x="610" y="90" width="220" height="205" rx="16" fill="#ede9fe" stroke="#a78bfa" stroke-width="2"/>
+  <text x="720" y="128" text-anchor="middle" class="label">企业传导环节</text>
+  <text x="633" y="168" class="body">• 库存成本</text>
+  <text x="633" y="200" class="body">• 合同调价周期</text>
+  <text x="633" y="232" class="body">• 竞争与需求弹性</text>
+  <text x="633" y="264" class="body">• 品牌与定价权</text>
+
+  <rect x="895" y="90" width="170" height="205" rx="16" fill="#dcfce7" stroke="#4ade80" stroke-width="2"/>
+  <text x="980" y="128" text-anchor="middle" class="label">CPI</text>
+  <text x="980" y="158" text-anchor="middle" class="body">居民消费价格</text>
+  <text x="918" y="198" class="body">• 消费品</text>
+  <text x="918" y="230" class="body">• 服务</text>
+  <text x="918" y="262" class="body">• 居住等项目</text>
+
+  <path d="M260 192 L316 192" class="arrow"/>
+  <path d="M545 192 L601 192" class="arrow"/>
+  <path d="M830 192 L886 192" class="arrow"/>
+
+  <rect x="145" y="335" width="810" height="78" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="550" y="367" text-anchor="middle" class="label">利润取决于谁先涨、涨多少、能否转嫁</text>
+  <text x="550" y="397" text-anchor="middle" class="note">售价涨得快于成本，利润率可能扩大；成本涨得更快且无法提价，利润率可能被压缩。</text>
+  <text x="550" y="442" text-anchor="middle" class="note">示意图：这是一条常见成本传导路径，不表示 PPI 必然、等比例或立即传到 CPI。</text>
+</svg>
