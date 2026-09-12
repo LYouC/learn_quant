@@ -86,6 +86,19 @@ export default defineConfig({
             link: '/chapters/14-macro-environment-and-a-shares'
           }
         ]
+      },
+      {
+        text: '第四部分：行业与市场风格',
+        items: [
+          {
+            text: '第15章 行业分析框架',
+            link: '/chapters/15-industry-analysis-framework'
+          },
+          {
+            text: '第16章 A股主要行业的财务特征',
+            link: '/chapters/16-financial-characteristics-of-major-a-share-industries'
+          }
+        ]
       }
     ],
     outline: {

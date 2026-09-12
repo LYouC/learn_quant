@@ -23,4 +23,4 @@ features:
 
 课程沿着“交易对象与市场 → 公司、指数与 ETF → 估值与市场 → 因子逻辑 → 因子检验 → 组合构建 → 回测可信度 → 风险与实盘”逐步展开。每一章只引入当前需要的知识，最终形成一套可解释、可回测、可交易的 A 股只做多投资系统。
 
-当前已完成第1—14章。继续学习：[第14章：宏观环境如何影响A股](/chapters/14-macro-environment-and-a-shares)。
+当前已完成第1—16章。继续学习：[第16章：A股主要行业的财务特征](/chapters/16-financial-characteristics-of-major-a-share-industries)。
