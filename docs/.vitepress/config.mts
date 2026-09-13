@@ -118,6 +118,14 @@ export default defineConfig({
           {
             text: '第20章 规模因子',
             link: '/chapters/20-size-factor'
+          },
+          {
+            text: '第21章 价值因子',
+            link: '/chapters/21-value-factor'
+          },
+          {
+            text: '第22章 质量因子',
+            link: '/chapters/22-quality-factor'
           }
         ]
       }

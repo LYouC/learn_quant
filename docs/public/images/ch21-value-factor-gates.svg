@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">价值因子从原始数字到可研究信号的四道检查</title>
+  <desc id="desc">流程从左到右依次检查指标是否适用、分母是否可靠、比较对象是否合理、指标是否互补，最后得到待检验的价值信号。任一关失败都返回修改定义或排除该指标。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .card { fill: #ffffff; stroke: #94a3b8; stroke-width: 2; }
+      .result { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; }
+      .number { fill: #2563eb; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .card-title { fill: #0f172a; font-size: 19px; font-weight: 700; }
+      .detail { fill: #475569; font-size: 16px; }
+      .number-text { fill: #ffffff; font-size: 18px; font-weight: 700; }
+      .arrow { stroke: #64748b; stroke-width: 3; fill: none; }
+      .return { stroke: #dc2626; stroke-width: 2; fill: none; stroke-dasharray: 6 5; }
+      .return-text { fill: #b91c1c; font-size: 15px; font-weight: 600; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .card { fill: #1f2937; stroke: #64748b; }
+        .result { fill: #172554; stroke: #60a5fa; }
+        .number { fill: #3b82f6; }
+        .heading, .card-title { fill: #f8fafc; }
+        .detail { fill: #cbd5e1; }
+        .arrow { stroke: #94a3b8; }
+        .return { stroke: #f87171; }
+        .return-text { fill: #fca5a5; }
+      }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="returnhead" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="470" rx="24"/>
+  <text class="heading" x="55" y="62">从“看起来便宜”到可检验价值信号</text>
+  <text class="detail" x="55" y="92">从左向右逐关检查；任一关失败，都应回到定义和数据，而不是用加权掩盖</text>
+
+  <rect class="card" x="45" y="135" width="210" height="205" rx="16"/>
+  <circle class="number" cx="78" cy="169" r="19"/>
+  <text class="number-text" x="78" y="175" text-anchor="middle">1</text>
+  <text class="card-title" x="108" y="176">指标适用吗</text>
+  <text class="detail" x="66" y="217">• 盈利、净资产是否为正</text>
+  <text class="detail" x="66" y="249">• 股权口径是否与市值匹配</text>
+  <text class="detail" x="66" y="281">• 金融企业是否用了错指标</text>
+  <text class="detail" x="66" y="313">• 数据在形成日是否已公开</text>
+
+  <rect class="card" x="305" y="135" width="210" height="205" rx="16"/>
+  <circle class="number" cx="338" cy="169" r="19"/>
+  <text class="number-text" x="338" y="175" text-anchor="middle">2</text>
+  <text class="card-title" x="368" y="176">分母可靠吗</text>
+  <text class="detail" x="326" y="217">• 利润是否一次性或在下降</text>
+  <text class="detail" x="326" y="249">• 资产是否面临减值</text>
+  <text class="detail" x="326" y="281">• 现金与分红能否持续</text>
+  <text class="detail" x="326" y="313">• 是否处于周期利润峰值</text>
+
+  <rect class="card" x="565" y="135" width="210" height="205" rx="16"/>
+  <circle class="number" cx="598" cy="169" r="19"/>
+  <text class="number-text" x="598" y="175" text-anchor="middle">3</text>
+  <text class="card-title" x="628" y="176">比较合理吗</text>
+  <text class="detail" x="586" y="217">• 同行业还是全市场比较</text>
+  <text class="detail" x="586" y="249">• 会计与商业模式是否相近</text>
+  <text class="detail" x="586" y="281">• 是否混入小盘收益</text>
+  <text class="detail" x="586" y="313">• 基准是否匹配真实组合</text>
+
+  <rect class="card" x="825" y="135" width="210" height="205" rx="16"/>
+  <circle class="number" cx="858" cy="169" r="19"/>
+  <text class="number-text" x="858" y="175" text-anchor="middle">4</text>
+  <text class="card-title" x="888" y="176">证据互补吗</text>
+  <text class="detail" x="846" y="217">• 收益率方向已经统一</text>
+  <text class="detail" x="846" y="249">• 没有重复计算同一信息</text>
+  <text class="detail" x="846" y="281">• 缺失规则事先固定</text>
+  <text class="detail" x="846" y="313">• 先等权，再验证复杂权重</text>
+
+  <path class="arrow" d="M255 238 H296" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M515 238 H556" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M775 238 H816" marker-end="url(#arrowhead)"/>
+  <path class="arrow" d="M1035 313 V453 H747" marker-end="url(#arrowhead)"/>
+
+  <path class="return" d="M925 348 V388 H150 V348" marker-end="url(#returnhead)"/>
+  <text class="return-text" x="538" y="414" text-anchor="middle">失败：修改口径、补充数据或把不适用指标排除</text>
+
+  <rect class="result" x="382" y="435" width="356" height="36" rx="18"/>
+  <text class="card-title" x="560" y="460" text-anchor="middle">通过：得到待样本外与真实交易检验的价值信号</text>
+</svg>

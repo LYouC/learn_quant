@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 650" role="img" aria-labelledby="title desc">
+  <title id="title">质量与估值形成四种不同的研究对象</title>
+  <desc id="desc">纵轴表示质量证据从低到高，横轴表示估值吸引力从低到高。右上角是质量较高且估值较有吸引力的重点研究区；左上角是好公司但价格可能过高；右下角是便宜但需要排查价值陷阱；左下角是质量与估值都缺少支持。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .q-tl { fill: #fef3c7; stroke: #d97706; }
+      .q-tr { fill: #dcfce7; stroke: #16a34a; }
+      .q-bl { fill: #f1f5f9; stroke: #94a3b8; }
+      .q-br { fill: #ffedd5; stroke: #ea580c; }
+      .heading { fill: #0f172a; font-size: 26px; font-weight: 700; }
+      .axis-label { fill: #334155; font-size: 18px; font-weight: 700; }
+      .quad-title { fill: #0f172a; font-size: 21px; font-weight: 700; }
+      .detail { fill: #475569; font-size: 17px; }
+      .note { fill: #64748b; font-size: 15px; }
+      .axis { stroke: #334155; stroke-width: 3; fill: none; }
+      .divider { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 7 6; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .q-tl { fill: #422006; stroke: #f59e0b; }
+        .q-tr { fill: #052e16; stroke: #22c55e; }
+        .q-bl { fill: #1f2937; stroke: #64748b; }
+        .q-br { fill: #431407; stroke: #f97316; }
+        .heading, .quad-title { fill: #f8fafc; }
+        .axis-label { fill: #e2e8f0; }
+        .detail { fill: #cbd5e1; }
+        .note { fill: #94a3b8; }
+        .axis { stroke: #cbd5e1; }
+        .divider { stroke: #64748b; }
+      }
+    </style>
+    <marker id="axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1050" height="620" rx="24"/>
+  <text class="heading" x="55" y="62">质量和估值是两条不同的判断轴</text>
+  <text class="detail" x="55" y="94">示意：两轴都使用形成日可得数据的相对排名，不代表绝对买卖阈值</text>
+
+  <rect class="q-tl" x="160" y="130" width="405" height="215" rx="16"/>
+  <rect class="q-tr" x="565" y="130" width="405" height="215" rx="16"/>
+  <rect class="q-bl" x="160" y="345" width="405" height="215" rx="16"/>
+  <rect class="q-br" x="565" y="345" width="405" height="215" rx="16"/>
+
+  <line class="divider" x1="565" y1="130" x2="565" y2="560"/>
+  <line class="divider" x1="160" y1="345" x2="970" y2="345"/>
+
+  <text class="quad-title" x="362" y="190" text-anchor="middle">好公司，价格可能太高</text>
+  <text class="detail" x="362" y="231" text-anchor="middle">经营证据较强，但市场已支付高价格</text>
+  <text class="detail" x="362" y="265" text-anchor="middle">等待估值，或验证增长能否超预期</text>
+
+  <text class="quad-title" x="767" y="190" text-anchor="middle">质量价值的重点研究区</text>
+  <text class="detail" x="767" y="231" text-anchor="middle">经营证据较强，价格也较有吸引力</text>
+  <text class="detail" x="767" y="265" text-anchor="middle">仍需检查增长、风险、数据与成交</text>
+
+  <text class="quad-title" x="362" y="405" text-anchor="middle">质量与估值都缺少支持</text>
+  <text class="detail" x="362" y="446" text-anchor="middle">经营证据偏弱，价格也没有补偿</text>
+  <text class="detail" x="362" y="480" text-anchor="middle">不能只凭故事跳过两项不足</text>
+
+  <text class="quad-title" x="767" y="405" text-anchor="middle">便宜，但先排查价值陷阱</text>
+  <text class="detail" x="767" y="446" text-anchor="middle">可能是风险定价，也可能正在修复</text>
+  <text class="detail" x="767" y="480" text-anchor="middle">需要利润、现金和偿债的拐点证据</text>
+
+  <path class="axis" d="M145 575 V115" marker-end="url(#axis-arrow)"/>
+  <path class="axis" d="M145 575 H990" marker-end="url(#axis-arrow)"/>
+  <text class="axis-label" x="65" y="355" text-anchor="middle" transform="rotate(-90 65 355)">质量证据：低 → 高</text>
+  <text class="axis-label" x="565" y="612" text-anchor="middle">估值吸引力：低 → 高（越向右越便宜）</text>
+
+  <text class="note" x="175" y="122">质量较高</text>
+  <text class="note" x="175" y="585">质量较低</text>
+</svg>
