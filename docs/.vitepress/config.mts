@@ -107,6 +107,15 @@ export default defineConfig({
             link: '/chapters/18-index-etf-and-benchmark'
           }
         ]
+      },
+      {
+        text: '第五部分：从投资逻辑进入因子体系',
+        items: [
+          {
+            text: '第19章 什么是因子',
+            link: '/chapters/19-what-is-a-factor'
+          }
+        ]
       }
     ],
     outline: {
