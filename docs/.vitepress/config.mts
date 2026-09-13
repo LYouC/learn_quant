@@ -114,6 +114,10 @@ export default defineConfig({
           {
             text: '第19章 什么是因子',
             link: '/chapters/19-what-is-a-factor'
+          },
+          {
+            text: '第20章 规模因子',
+            link: '/chapters/20-size-factor'
           }
         ]
       }

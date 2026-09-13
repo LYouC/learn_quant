@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
+  <title id="title">同一家公司同一天的三种市值口径</title>
+  <desc id="desc">同一家公司、同一天的三种市值：总市值100亿元对应全部10亿股，流通市值60亿元对应可流通的6亿股，自由流通市值24亿元对应剔除大股东与战略持股后的2.4亿股。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 24px; font-weight: 700; }
+      .detail { fill: #475569; font-size: 17px; }
+      .bar-total { fill: #1d4ed8; }
+      .bar-float { fill: #3b82f6; }
+      .bar-free { fill: #93c5fd; }
+      .value { fill: #0f172a; font-size: 19px; font-weight: 600; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .detail { fill: #cbd5e1; }
+        .bar-total { fill: #3b82f6; }
+        .bar-float { fill: #60a5fa; }
+        .bar-free { fill: #93c5fd; }
+        .value { fill: #f8fafc; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="370" rx="24"/>
+
+  <text class="heading" x="60" y="62">同一家公司、同一天的三种市值</text>
+  <text class="detail" x="60" y="94">示意：股价同为 10 元，长方形长度按金额等比绘制</text>
+
+  <rect class="bar-total" x="60" y="130" width="520" height="64" rx="10"/>
+  <text class="value" x="600" y="170">总市值 100 亿元 · 全部 10 亿股</text>
+
+  <rect class="bar-float" x="60" y="218" width="312" height="64" rx="10"/>
+  <text class="value" x="392" y="258">流通市值 60 亿元 · 可流通 6 亿股</text>
+
+  <rect class="bar-free" x="60" y="306" width="126" height="64" rx="10"/>
+  <text class="value" x="206" y="346">自由流通市值 24 亿元 · 2.4 亿股</text>
+</svg>
