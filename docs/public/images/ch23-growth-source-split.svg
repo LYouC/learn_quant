@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" role="img" aria-labelledby="title desc">
+  <title id="title">同一个高增速可能来自四种不同的来源</title>
+  <desc id="desc">左侧是同一个报表增速，利润同比增长 45%。右侧分成四种来源：需求扩张与份额提升可能重复；行业周期价格上行随周期反转；并购并表与资产处置通常只出现一次；去年基数异常偏低只是数学效应。每种来源下面标注需要核查的证据。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .source { fill: #dbeafe; stroke: #2563eb; }
+      .c-repeat { fill: #dcfce7; stroke: #16a34a; }
+      .c-cycle { fill: #fef3c7; stroke: #d97706; }
+      .c-once { fill: #ffedd5; stroke: #ea580c; }
+      .c-base { fill: #e2e8f0; stroke: #64748b; }
+      .heading { fill: #0f172a; font-size: 26px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .card-title { fill: #0f172a; font-size: 20px; font-weight: 700; }
+      .card-line { fill: #334155; font-size: 16px; }
+      .card-check { fill: #64748b; font-size: 15px; }
+      .src-label { fill: #1e40af; font-size: 17px; font-weight: 700; }
+      .src-value { fill: #1e3a8a; font-size: 34px; font-weight: 700; }
+      .src-note { fill: #3b82f6; font-size: 15px; }
+      .arrow { stroke: #94a3b8; stroke-width: 2.5; fill: none; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .source { fill: #1e3a8a; stroke: #60a5fa; }
+        .c-repeat { fill: #052e16; stroke: #22c55e; }
+        .c-cycle { fill: #422006; stroke: #f59e0b; }
+        .c-once { fill: #431407; stroke: #f97316; }
+        .c-base { fill: #1f2937; stroke: #94a3b8; }
+        .heading, .card-title { fill: #f8fafc; }
+        .card-line { fill: #e2e8f0; }
+        .card-check, .subtle { fill: #94a3b8; }
+        .src-label, .src-value { fill: #dbeafe; }
+        .src-note { fill: #93c5fd; }
+        .arrow { stroke: #64748b; }
+      }
+    </style>
+    <marker id="flow-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1050" height="650" rx="24"/>
+  <text class="heading" x="55" y="62">同一个高增速，可能来自四种不同的来源</text>
+  <text class="subtle" x="55" y="94">示意：报表增速相同，未来能否重复却完全不同</text>
+
+  <rect class="source" x="55" y="245" width="250" height="200" rx="16"/>
+  <text class="src-label" x="180" y="295" text-anchor="middle">报表显示</text>
+  <text class="src-label" x="180" y="330" text-anchor="middle">归母净利润同比</text>
+  <text class="src-value" x="180" y="388" text-anchor="middle">+45%</text>
+  <text class="src-note" x="180" y="420" text-anchor="middle">同一列数字</text>
+
+  <rect class="c-repeat" x="380" y="125" width="655" height="105" rx="14"/>
+  <text class="card-title" x="408" y="163">需求扩张、份额提升</text>
+  <text class="card-line" x="408" y="193">可能重复，取决于竞争力能维持多久</text>
+  <text class="card-check" x="408" y="217">查：销量、份额、毛利率是否稳定</text>
+
+  <rect class="c-cycle" x="380" y="243" width="655" height="105" rx="14"/>
+  <text class="card-title" x="408" y="281">行业周期价格上行</text>
+  <text class="card-line" x="408" y="311">随周期反转，高点增速常不可持续</text>
+  <text class="card-check" x="408" y="335">查：产品价格、库存、产能利用率</text>
+
+  <rect class="c-once" x="380" y="361" width="655" height="105" rx="14"/>
+  <text class="card-title" x="408" y="399">并购并表、资产处置</text>
+  <text class="card-line" x="408" y="429">一次性，下一年通常不再出现</text>
+  <text class="card-check" x="408" y="453">查：内生口径、扣非利润、商誉</text>
+
+  <rect class="c-base" x="380" y="479" width="655" height="105" rx="14"/>
+  <text class="card-title" x="408" y="517">去年基数异常偏低</text>
+  <text class="card-line" x="408" y="547">数学效应，不代表经营改善</text>
+  <text class="card-check" x="408" y="571">查：绝对利润水平、两年复合增速</text>
+
+  <path class="arrow" d="M305 345 C340 345 345 177 380 177" marker-end="url(#flow-arrow)"/>
+  <path class="arrow" d="M305 345 C340 345 345 295 380 295" marker-end="url(#flow-arrow)"/>
+  <path class="arrow" d="M305 345 C340 345 345 413 380 413" marker-end="url(#flow-arrow)"/>
+  <path class="arrow" d="M305 345 C340 345 345 531 380 531" marker-end="url(#flow-arrow)"/>
+</svg>

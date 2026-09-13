@@ -126,6 +126,10 @@ export default defineConfig({
           {
             text: '第22章 质量因子',
             link: '/chapters/22-quality-factor'
+          },
+          {
+            text: '第23章 成长因子',
+            link: '/chapters/23-growth-factor'
           }
         ]
       }
