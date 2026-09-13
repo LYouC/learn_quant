@@ -130,6 +130,14 @@ export default defineConfig({
           {
             text: '第23章 成长因子',
             link: '/chapters/23-growth-factor'
+          },
+          {
+            text: '第24章 动量与反转因子',
+            link: '/chapters/24-momentum-and-reversal-factor'
+          },
+          {
+            text: '第25章 波动率、流动性与交易行为因子',
+            link: '/chapters/25-volatility-liquidity-and-trading-behavior-factor'
           }
         ]
       }

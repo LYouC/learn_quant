@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 490" role="img" aria-labelledby="title desc">
+  <title id="title">动量的形成期与持有期，以及中间为什么跳过一个间隔</title>
+  <desc id="desc">横轴是时间，越靠右越接近今天，紫色虚线标出今天。从今天往回：最贴近今天的一小段是短期反转区，中间跳过一个间隔，再往左约三到十二个月是中期动量形成期，更早的历史不参与计算。今天右侧是持有期。中期动量方向为延续，短期反转方向相反。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .seg-old { fill: #e2e8f0; stroke: #64748b; stroke-width: 2; }
+      .seg-mom { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; }
+      .seg-gap { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+      .seg-rev { fill: #fee2e2; stroke: #dc2626; stroke-width: 2; }
+      .seg-hold { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; }
+      .seg-title { fill: #0f172a; font-size: 17px; font-weight: 700; }
+      .seg-note { fill: #475569; font-size: 14px; }
+      .axis { stroke: #94a3b8; stroke-width: 2.5; fill: none; }
+      .axis-label { fill: #64748b; font-size: 15px; }
+      .today-line { stroke: #7c3aed; stroke-width: 2.5; stroke-dasharray: 7 5; fill: none; }
+      .today-text { fill: #6d28d9; font-size: 18px; font-weight: 700; }
+      .chip-mom { fill: #2563eb; }
+      .chip-rev { fill: #dc2626; }
+      .dir-mom { fill: #1d4ed8; font-size: 16px; font-weight: 600; }
+      .dir-rev { fill: #b91c1c; font-size: 16px; font-weight: 600; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .seg-old { fill: #1f2937; stroke: #94a3b8; }
+        .seg-mom { fill: #1e3a8a; stroke: #60a5fa; }
+        .seg-gap { fill: #422006; stroke: #f59e0b; }
+        .seg-rev { fill: #450a0a; stroke: #f87171; }
+        .seg-hold { fill: #052e16; stroke: #22c55e; }
+        .seg-title { fill: #f8fafc; }
+        .seg-note { fill: #cbd5e1; }
+        .axis { stroke: #64748b; }
+        .axis-label { fill: #94a3b8; }
+        .today-line { stroke: #a78bfa; }
+        .today-text { fill: #c4b5fd; }
+        .chip-mom { fill: #60a5fa; }
+        .chip-rev { fill: #f87171; }
+        .dir-mom { fill: #93c5fd; }
+        .dir-rev { fill: #fca5a5; }
+      }
+    </style>
+    <marker id="time-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="460" rx="24"/>
+  <text class="heading" x="55" y="62">同一份价格数据，窗口选在哪，方向就可能相反</text>
+  <text class="subtle" x="55" y="94">示意：横轴为时间，紫色虚线是“今天”，蓝色段用来算动量，绿色段用来持有</text>
+
+  <text class="today-text" x="840" y="140" text-anchor="middle">今天</text>
+  <path class="today-line" d="M840 152 V330"/>
+
+  <rect class="seg-old" x="80" y="250" width="240" height="76" rx="12"/>
+  <text class="seg-title" x="200" y="284" text-anchor="middle">更早的历史</text>
+  <text class="seg-note" x="200" y="310" text-anchor="middle">不参与计算</text>
+
+  <rect class="seg-mom" x="320" y="250" width="300" height="76" rx="12"/>
+  <text class="seg-title" x="470" y="284" text-anchor="middle">中期动量形成期</text>
+  <text class="seg-note" x="470" y="310" text-anchor="middle">约 3—12 个月，用这段算涨幅</text>
+
+  <rect class="seg-gap" x="620" y="250" width="90" height="76" rx="12"/>
+  <text class="seg-title" x="665" y="284" text-anchor="middle">跳过</text>
+  <text class="seg-note" x="665" y="310" text-anchor="middle">约 1 个月</text>
+
+  <rect class="seg-rev" x="710" y="250" width="130" height="76" rx="12"/>
+  <text class="seg-title" x="775" y="284" text-anchor="middle">短期反转区</text>
+  <text class="seg-note" x="775" y="310" text-anchor="middle">约 1 个月</text>
+
+  <rect class="seg-hold" x="840" y="250" width="200" height="76" rx="12"/>
+  <text class="seg-title" x="940" y="284" text-anchor="middle">持有期</text>
+  <text class="seg-note" x="940" y="310" text-anchor="middle">在这里吃信号</text>
+
+  <path class="axis" d="M80 348 H1050" marker-end="url(#time-arrow)"/>
+  <text class="axis-label" x="1055" y="353">时间</text>
+
+  <rect class="chip-mom" x="80" y="384" width="16" height="16" rx="4"/>
+  <text class="dir-mom" x="108" y="398">中期动量：过去涨得多 → 未来倾向于继续领先</text>
+
+  <rect class="chip-rev" x="80" y="424" width="16" height="16" rx="4"/>
+  <text class="dir-rev" x="108" y="438">短期反转：过去涨得多 → 未来倾向于回落，方向与动量相反</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+  <title id="title">市场方向掉头时，动量组合为什么容易受伤</title>
+  <desc id="desc">上图画市场走势：先下跌，在紫色虚线处见底，随后快速反弹。下图画同一个动量组合相对市场的表现，灰色虚线表示与市场同步。下跌段曲线在虚线之上，说明相对抗跌；见底附近仍然领先；进入反弹段后迅速掉到虚线之下，且越走越低，说明跑输得越来越明显。示意数据。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .panel { fill: #ffffff; stroke: #94a3b8; stroke-width: 2; }
+      .panel-title { fill: #0f172a; font-size: 18px; font-weight: 700; }
+      .phase { fill: #64748b; font-size: 15px; font-weight: 600; }
+      .market { stroke: #2563eb; stroke-width: 3; fill: none; }
+      .relative { stroke: #d97706; stroke-width: 3; fill: none; }
+      .baseline { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 6; fill: none; }
+      .baseline-text { fill: #64748b; font-size: 14px; }
+      .turn-line { stroke: #7c3aed; stroke-width: 2.5; stroke-dasharray: 7 5; fill: none; }
+      .turn-text { fill: #6d28d9; font-size: 17px; font-weight: 700; }
+      .caption { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .panel { fill: #1f2937; stroke: #64748b; }
+        .panel-title { fill: #f8fafc; }
+        .phase { fill: #cbd5e1; }
+        .market { stroke: #60a5fa; }
+        .relative { stroke: #fbbf24; }
+        .baseline { stroke: #64748b; }
+        .baseline-text { fill: #94a3b8; }
+        .turn-line { stroke: #a78bfa; }
+        .turn-text { fill: #c4b5fd; }
+        .caption { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="590" rx="24"/>
+  <text class="heading" x="55" y="62">市场方向掉头时，动量组合为什么容易受伤</text>
+  <text class="subtle" x="55" y="94">示意：上图是市场走势，下图是同一个动量组合相对市场的表现</text>
+
+  <text class="turn-text" x="700" y="130" text-anchor="middle">见底</text>
+
+  <rect class="panel" x="80" y="140" width="970" height="195" rx="14"/>
+  <text class="panel-title" x="105" y="174">市场走势</text>
+  <text class="phase" x="330" y="174">下跌</text>
+  <text class="phase" x="880" y="174">快速反弹</text>
+  <path class="turn-line" d="M700 150 V330"/>
+  <path class="market" d="M80 200 L200 220 L320 245 L440 270 L560 291 L680 302 L740 278 L800 248 L860 218 L920 192 L980 174 L1050 160"/>
+
+  <rect class="panel" x="80" y="370" width="970" height="195" rx="14"/>
+  <text class="panel-title" x="105" y="404">动量组合相对市场</text>
+  <path class="turn-line" d="M700 380 V545"/>
+  <path class="baseline" d="M95 475 H1060"/>
+  <text class="baseline-text" x="1040" y="466" text-anchor="end">与市场同步</text>
+  <path class="relative" d="M80 447 L200 436 L320 425 L440 416 L560 408 L680 402 L740 424 L800 444 L860 462 L920 482 L980 502 L1050 528"/>
+
+  <text class="phase" x="200" y="552">① 下跌段：相对抗跌</text>
+  <text class="phase" x="660" y="552">② 见底</text>
+  <text class="phase" x="860" y="552">③ 反弹段：明显跑输市场</text>
+</svg>
