@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 470" role="img" aria-labelledby="title desc">
+  <title id="title">累计超额收益量的是事件股票和对照组之间的差距</title>
+  <desc id="desc">两条累计收益曲线从事件日出发。实线是发生该类事件的股票，虚线是同一时点同行业同市值的对照组。横轴是事件后的交易日数，纵轴是相对起点累计涨跌的百分点。到第二十个交易日，事件股票累计上涨约五个百分点，对照组约两个百分点，两条线末端之间的竖直距离三个百分点就是累计超额收益 CAR。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .axis-line { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .tick-label { fill: #64748b; font-size: 14px; }
+      .axis-name { fill: #64748b; font-size: 15px; }
+      .event-line { stroke: #dc2626; stroke-width: 3.2; fill: none; }
+      .bench-line { stroke: #64748b; stroke-width: 3.2; stroke-dasharray: 9 6; fill: none; }
+      .event-dot { fill: #dc2626; }
+      .bench-dot { fill: #64748b; }
+      .today-line { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 6 5; fill: none; }
+      .gap-line { stroke: #b91c1c; stroke-width: 2.2; stroke-dasharray: 5 4; fill: none; }
+      .gap-mark { fill: #b91c1c; }
+      .car-label { fill: #b91c1c; font-size: 18px; font-weight: 700; }
+      .legend-text { fill: #334155; font-size: 15px; }
+      .note-text { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .axis-line { stroke: #64748b; }
+        .tick-label { fill: #94a3b8; }
+        .axis-name { fill: #94a3b8; }
+        .event-line { stroke: #f87171; }
+        .bench-line { stroke: #94a3b8; }
+        .event-dot { fill: #f87171; }
+        .bench-dot { fill: #94a3b8; }
+        .today-line { stroke: #64748b; }
+        .gap-line { stroke: #fca5a5; }
+        .gap-mark { fill: #fca5a5; }
+        .car-label { fill: #fca5a5; }
+        .legend-text { fill: #cbd5e1; }
+        .note-text { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="440" rx="24"/>
+  <text class="heading" x="55" y="62">累计超额收益量的是和“本来该赚多少”的差距</text>
+  <text class="subtle" x="55" y="94">示意：纵轴为相对起点累计涨跌（百分点），横轴为事件后的交易日数</text>
+
+  <path class="axis-line" d="M150 90 V392"/>
+  <path class="axis-line" d="M150 380 H900"/>
+  <path d="M900 380 l-14 -6 v12 z" fill="#94a3b8"/>
+  <text class="axis-name" x="908" y="385">交易日数</text>
+
+  <text class="tick-label" x="138" y="385" text-anchor="end">0%</text>
+  <text class="tick-label" x="138" y="292" text-anchor="end">2%</text>
+  <text class="tick-label" x="138" y="198" text-anchor="end">4%</text>
+  <text class="tick-label" x="138" y="105" text-anchor="end">6%</text>
+
+  <path class="today-line" d="M150 90 V392"/>
+  <text class="tick-label" x="150" y="82" text-anchor="middle">事件日：回测最早从这里开始建仓</text>
+  <text class="tick-label" x="840" y="404" text-anchor="middle">第 20 个交易日</text>
+
+  <path class="bench-line" d="M150 380 C 300 372 520 330 840 287"/>
+  <path class="event-line" d="M150 380 C 300 352 520 215 840 147"/>
+
+  <path class="gap-line" d="M840 155 V279"/>
+  <path class="gap-mark" d="M840 145 l-6 14 h12 z"/>
+  <path class="gap-mark" d="M840 289 l-6 -14 h12 z"/>
+  <text class="car-label" x="858" y="212">CAR</text>
+  <text class="car-label" x="858" y="238">3 个百分点</text>
+
+  <circle class="bench-dot" cx="840" cy="287" r="6"/>
+  <circle class="event-dot" cx="840" cy="147" r="6"/>
+
+  <path class="event-line" d="M62 432 H112"/>
+  <text class="legend-text" x="122" y="437">发生该类事件的股票</text>
+  <path class="bench-line" d="M330 432 H380"/>
+  <text class="legend-text" x="390" y="437">对照组：同行业、同市值的一组股票</text>
+
+  <text class="note-text" x="640" y="437">差距来自事件，还是来自对照组没选对，必须分开检查</text>
+</svg>

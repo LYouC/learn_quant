@@ -138,6 +138,10 @@ export default defineConfig({
           {
             text: '第25章 波动率、流动性与交易行为因子',
             link: '/chapters/25-volatility-liquidity-and-trading-behavior-factor'
+          },
+          {
+            text: '第26章 事件与另类因子',
+            link: '/chapters/26-event-and-alternative-factors'
           }
         ]
       }

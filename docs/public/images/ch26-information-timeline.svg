@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 490" role="img" aria-labelledby="title desc">
+  <title id="title">同一份业绩数字，从产生到你能够交易，中间隔着好几个月</title>
+  <desc id="desc">横轴是时间，从左到右依次是：报告期结束（12月31日，数字在会计上已经确定但公司尚未披露）、可选的业绩预告（1月31日前，只给区间或盈亏方向）、可选的业绩快报（定期报告披露前，未经审计）、定期报告披露（4月30日前，审计口径，多在收盘后发布）、以及最早可成交的下一交易日。报告期到定期报告公告之间最长约四个月，都属于市场还看不到数字的时期。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .box-main { fill: #e2e8f0; stroke: #64748b; stroke-width: 2; }
+      .box-report { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; }
+      .box-trade { fill: #dcfce7; stroke: #16a34a; stroke-width: 2; }
+      .box-opt { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+      .box-title { fill: #0f172a; font-size: 17px; font-weight: 700; }
+      .box-time { fill: #334155; font-size: 14px; }
+      .box-note { fill: #475569; font-size: 13px; }
+      .axis { stroke: #94a3b8; stroke-width: 2.5; fill: none; }
+      .axis-label { fill: #64748b; font-size: 15px; }
+      .dot { fill: #94a3b8; }
+      .link { stroke: #94a3b8; stroke-width: 1.8; stroke-dasharray: 5 4; fill: none; }
+      .footnote { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .box-main { fill: #1f2937; stroke: #94a3b8; }
+        .box-report { fill: #1e3a8a; stroke: #60a5fa; }
+        .box-trade { fill: #052e16; stroke: #22c55e; }
+        .box-opt { fill: #422006; stroke: #f59e0b; }
+        .box-title { fill: #f8fafc; }
+        .box-time { fill: #cbd5e1; }
+        .box-note { fill: #cbd5e1; }
+        .axis { stroke: #64748b; }
+        .axis-label { fill: #94a3b8; }
+        .dot { fill: #64748b; }
+        .link { stroke: #64748b; }
+        .footnote { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="460" rx="24"/>
+  <text class="heading" x="55" y="62">同一份业绩数字，从产生到你能够交易，中间隔着好几个月</text>
+  <text class="subtle" x="55" y="94">示意：横轴为时间；蓝色是几乎每家公司都会走的步骤，橙色是可有可无的步骤</text>
+
+  <path class="axis" d="M90 250 H1030"/>
+  <path d="M1030 250 l-14 -6 v12 z" fill="#94a3b8"/>
+  <text class="axis-label" x="1035" y="255">时间</text>
+
+  <path class="link" d="M380 214 V246"/>
+  <path class="link" d="M560 214 V246"/>
+  <path class="link" d="M150 306 V254"/>
+  <path class="link" d="M760 306 V254"/>
+  <path class="link" d="M950 306 V254"/>
+
+  <circle class="dot" cx="150" cy="250" r="7"/>
+  <circle class="dot" cx="380" cy="250" r="7"/>
+  <circle class="dot" cx="560" cy="250" r="7"/>
+  <circle class="dot" cx="760" cy="250" r="7"/>
+  <circle class="dot" cx="950" cy="250" r="7"/>
+
+  <rect class="box-opt" x="295" y="110" width="170" height="100" rx="14"/>
+  <text class="box-title" x="380" y="142" text-anchor="middle">业绩预告</text>
+  <text class="box-time" x="380" y="170" text-anchor="middle">1 月 31 日前</text>
+  <text class="box-note" x="380" y="194" text-anchor="middle">区间或方向，未审计</text>
+
+  <rect class="box-opt" x="475" y="110" width="170" height="100" rx="14"/>
+  <text class="box-title" x="560" y="142" text-anchor="middle">业绩快报</text>
+  <text class="box-time" x="560" y="170" text-anchor="middle">定期报告披露前</text>
+  <text class="box-note" x="560" y="194" text-anchor="middle">可能没有</text>
+
+  <rect class="box-main" x="60" y="310" width="180" height="100" rx="14"/>
+  <text class="box-title" x="150" y="342" text-anchor="middle">报告期结束</text>
+  <text class="box-time" x="150" y="370" text-anchor="middle">12 月 31 日</text>
+  <text class="box-note" x="150" y="394" text-anchor="middle">会计上已经确定</text>
+
+  <rect class="box-report" x="670" y="310" width="180" height="100" rx="14"/>
+  <text class="box-title" x="760" y="342" text-anchor="middle">定期报告披露</text>
+  <text class="box-time" x="760" y="370" text-anchor="middle">4 月 30 日前</text>
+  <text class="box-note" x="760" y="394" text-anchor="middle">审计口径，多在收盘后</text>
+
+  <rect class="box-trade" x="860" y="310" width="180" height="100" rx="14"/>
+  <text class="box-title" x="950" y="342" text-anchor="middle">最早可成交</text>
+  <text class="box-time" x="950" y="370" text-anchor="middle">下一个交易日</text>
+  <text class="box-note" x="950" y="394" text-anchor="middle">跳空可能已经发生</text>
+
+  <text class="footnote" x="55" y="452">报告期到定期报告公告之间最长约四个月：数字早已确定，市场还看不到。盘后发布的公告，最早只能在下一个交易日成交。</text>
+</svg>

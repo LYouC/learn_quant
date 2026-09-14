@@ -23,4 +23,4 @@ features:
 
 课程沿着“交易对象与市场 → 公司、指数与 ETF → 估值与市场 → 因子逻辑 → 因子检验 → 组合构建 → 回测可信度 → 风险与实盘”逐步展开。每一章只引入当前需要的知识，最终形成一套可解释、可回测、可交易的 A 股只做多投资系统。
 
-当前已完成第1—25章。继续学习：[第25章：波动率、流动性与交易行为因子](/chapters/25-volatility-liquidity-and-trading-behavior-factor)。
+当前已完成第1—26章。继续学习：[第26章：事件与另类因子](/chapters/26-event-and-alternative-factors)。
