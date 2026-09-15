@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc">
+  <title id="title">两个因子的累计 IC：均值和稳定性是两件事</title>
+  <desc id="desc">横轴是十二个月，纵轴是累计 IC，数据为示意。因子A的月均IC是0.06、标准差0.18，十二个月累计到0.72，但它的累计线在第二个月就被因子B追平，此后每两个月回撤一次。因子B的月均IC只有0.03、标准差0.04，累计到0.36，路径几乎是一条直线。只看终点高度会选因子A，同时看路径才会发现因子B每个月都在推进。图要说明IC均值和ICIR必须一起读：均值回答信号有多强，ICIR回答这份强度能不能被相信。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { fill: #64748b; font-size: 14px; }
+      .line-a { fill: none; stroke: #2563eb; stroke-width: 3.5; }
+      .line-b { fill: none; stroke: #16a34a; stroke-width: 3.5; }
+      .dot-a { fill: #2563eb; }
+      .dot-b { fill: #16a34a; }
+      .tag { font-size: 16px; font-weight: 700; }
+      .tag-a { fill: #1d4ed8; }
+      .tag-b { fill: #15803d; }
+      .legend { fill: #334155; font-size: 15px; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .grid { stroke: #334155; }
+        .axis { stroke: #64748b; }
+        .tick { fill: #94a3b8; }
+        .line-a { stroke: #60a5fa; }
+        .line-b { stroke: #4ade80; }
+        .dot-a { fill: #60a5fa; }
+        .dot-b { fill: #4ade80; }
+        .tag-a { fill: #93c5fd; }
+        .tag-b { fill: #86efac; }
+        .legend { fill: #cbd5e1; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="550" rx="24"/>
+  <text class="heading" x="55" y="62">两个因子的累计 IC：均值不同，稳定性也不同</text>
+  <text class="subtle" x="55" y="94">示意：十二个月 IC 的累加，纵轴为累计 IC（无量纲）</text>
+
+  <rect class="panel" x="55" y="130" width="890" height="340" rx="16"/>
+
+  <line class="grid" x1="100" y1="350" x2="900" y2="350"/>
+  <line class="grid" x1="100" y1="270" x2="900" y2="270"/>
+  <line class="grid" x1="100" y1="190" x2="900" y2="190"/>
+  <line class="grid" x1="100" y1="110" x2="900" y2="110"/>
+
+  <text class="tick" x="88" y="435">0.0</text>
+  <text class="tick" x="88" y="355">0.2</text>
+  <text class="tick" x="88" y="275">0.4</text>
+  <text class="tick" x="88" y="195">0.6</text>
+  <text class="tick" x="88" y="115">0.8</text>
+
+  <line class="axis" x1="100" y1="430" x2="900" y2="430"/>
+  <line class="axis" x1="100" y1="430" x2="100" y2="150"/>
+
+  <text class="tick" x="100" y="458" text-anchor="middle">1月</text>
+  <text class="tick" x="245.5" y="458" text-anchor="middle">3月</text>
+  <text class="tick" x="390.9" y="458" text-anchor="middle">5月</text>
+  <text class="tick" x="536.4" y="458" text-anchor="middle">7月</text>
+  <text class="tick" x="681.8" y="458" text-anchor="middle">9月</text>
+  <text class="tick" x="827.3" y="458" text-anchor="middle">11月</text>
+
+  <polyline class="line-a" points="100,330 172.7,402 245.5,282 318.2,322 390.9,234 463.6,294 536.4,182 609.1,230 681.8,150 754.5,170 827.3,98 900,142"/>
+  <polyline class="line-b" points="100,398 172.7,398 245.5,362 318.2,374 390.9,366 463.6,342 536.4,350 609.1,330 681.8,302 754.5,306 827.3,290 900,286"/>
+
+  <circle class="dot-a" cx="100" cy="330" r="6"/>
+  <circle class="dot-a" cx="900" cy="142" r="7"/>
+  <circle class="dot-b" cx="100" cy="398" r="6"/>
+  <circle class="dot-b" cx="900" cy="286" r="7"/>
+
+  <text class="tag tag-a" x="915" y="132">因子A：0.72</text>
+  <text class="tag tag-b" x="915" y="292">因子B：0.36</text>
+
+  <text class="legend" x="155" y="132">因子A：月均 IC 0.06、标准差 0.18、ICIR 0.33，一半月份方向相反</text>
+  <text class="legend" x="155" y="160">因子B：月均 IC 0.03、标准差 0.04、ICIR 0.75，方向几乎每个月都对</text>
+
+  <text class="foot" x="55" y="508">因子A的累计线在第 2 个月就被因子B追平，此后每两个月回撤一次；因子B几乎是一条直线。</text>
+  <text class="foot" x="55" y="538">只看第十二个月的终点高度会选因子A。均值回答“信号有多强”，ICIR 回答“这份强度能不能被相信”。</text>
+</svg>

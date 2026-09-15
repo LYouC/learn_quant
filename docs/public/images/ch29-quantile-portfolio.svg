@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc">
+  <title id="title">单因子分组回测的十组平均收益</title>
+  <desc id="desc">横轴是按因子值从高到低分出的十组，纵轴是每组的月平均收益，数据为示意。柱子整体从左到右递减：第1组月均正1.4个百分点，第10组月均负0.7个百分点，中间第4组比第3组高出0.1个百分点，属于小幅回摆。虚线标出十组等权汇总后的全市场平均收益0.48个百分点。第1组相对第10组的多空差是2.1个百分点，而第1组相对全市场等权的超额只有0.92个百分点。图要说明的是分组图同时显示差距有多大和差距是否连续，而多空差高估了只做多投资者能拿到的部分。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .baseline { stroke: #94a3b8; stroke-width: 2; }
+      .bar { fill: #cbd5e1; }
+      .bar-top { fill: #2563eb; }
+      .bar-bottom { fill: #ea580c; }
+      .value { fill: #334155; font-size: 14px; text-anchor: middle; }
+      .value-top { fill: #1d4ed8; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .value-bottom { fill: #c2410c; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .group-label { fill: #475569; font-size: 14px; text-anchor: middle; }
+      .guide { stroke: #7c3aed; stroke-width: 2; stroke-dasharray: 7 6; }
+      .guide-label { fill: #6d28d9; font-size: 14px; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .baseline { stroke: #64748b; }
+        .bar { fill: #475569; }
+        .bar-top { fill: #60a5fa; }
+        .bar-bottom { fill: #fb923c; }
+        .value { fill: #cbd5e1; }
+        .value-top { fill: #93c5fd; }
+        .value-bottom { fill: #fdba74; }
+        .group-label { fill: #cbd5e1; }
+        .guide { stroke: #a78bfa; }
+        .guide-label { fill: #c4b5fd; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="550" rx="24"/>
+  <text class="heading" x="55" y="62">分组回测：十组的平均收益</text>
+  <text class="subtle" x="55" y="94">示意：四千只股票按因子值从高到低分成十组，每组等权持有，纵轴为月平均收益（%）</text>
+
+  <rect class="panel" x="55" y="130" width="890" height="340" rx="16"/>
+
+  <line class="guide" x1="75" y1="272" x2="925" y2="272"/>
+  <text class="guide-label" x="925" y="262" text-anchor="end">全市场等权平均 +0.48</text>
+
+  <line class="baseline" x1="75" y1="320" x2="925" y2="320"/>
+
+  <rect class="bar-top" x="72" y="180" width="56" height="140" rx="4"/>
+  <rect class="bar" x="162" y="210" width="56" height="110" rx="4"/>
+  <rect class="bar" x="252" y="230" width="56" height="90" rx="4"/>
+  <rect class="bar" x="342" y="220" width="56" height="100" rx="4"/>
+  <rect class="bar" x="432" y="260" width="56" height="60" rx="4"/>
+  <rect class="bar" x="522" y="270" width="56" height="50" rx="4"/>
+  <rect class="bar" x="612" y="290" width="56" height="30" rx="4"/>
+  <rect class="bar" x="702" y="318" width="56" height="4" rx="2"/>
+  <rect class="bar" x="792" y="320" width="56" height="30" rx="4"/>
+  <rect class="bar-bottom" x="882" y="320" width="56" height="70" rx="4"/>
+
+  <text class="value-top" x="100" y="170">+1.4</text>
+  <text class="value" x="190" y="200">+1.1</text>
+  <text class="value" x="280" y="220">+0.9</text>
+  <text class="value" x="370" y="210">+1.0</text>
+  <text class="value" x="460" y="250">+0.6</text>
+  <text class="value" x="550" y="260">+0.5</text>
+  <text class="value" x="640" y="280">+0.3</text>
+  <text class="value" x="730" y="310">0.0</text>
+  <text class="value-bottom" x="820" y="372">−0.3</text>
+  <text class="value-bottom" x="910" y="412">−0.7</text>
+
+  <text class="group-label" x="100" y="445">第1组</text>
+  <text class="group-label" x="190" y="445">第2组</text>
+  <text class="group-label" x="280" y="445">第3组</text>
+  <text class="group-label" x="370" y="445">第4组</text>
+  <text class="group-label" x="460" y="445">第5组</text>
+  <text class="group-label" x="550" y="445">第6组</text>
+  <text class="group-label" x="640" y="445">第7组</text>
+  <text class="group-label" x="730" y="445">第8组</text>
+  <text class="group-label" x="820" y="445">第9组</text>
+  <text class="group-label" x="910" y="445">第10组</text>
+
+  <text class="foot" x="55" y="508">多空差（第1组 − 第10组）为 2.1 个百分点，但只做多拿不到低分组那一边：第1组相对全市场等权的超额只有 0.92 个百分点。</text>
+  <text class="foot" x="55" y="538">第4组比第3组高 0.1 个百分点，这种小幅回摆很常见；要警惕的是“只有极端组好、中间乱成一团”的形状。</text>
+</svg>

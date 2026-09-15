@@ -155,6 +155,10 @@ export default defineConfig({
           {
             text: '第28章 因子预处理',
             link: '/chapters/28-factor-preprocessing'
+          },
+          {
+            text: '第29章 单因子检验',
+            link: '/chapters/29-single-factor-testing'
           }
         ]
       }

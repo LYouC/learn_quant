@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc">
+  <title id="title">因子衰减：短周期的信号很快就失效</title>
+  <desc id="desc">横轴是持有期，取一个月、三个月、六个月和十二个月；纵轴是这一持有期下因子值与未来收益的 IC，数据为示意。反转类因子在一个月处最高，为0.075，三个月降到0.035，六个月0.012，十二个月基本归零；价值与质量类因子从0.040开始，三个月略升到0.045，此后缓慢回落到十二个月的0.032。两条曲线在一个月处只差不到一倍，到十二个月处一条贴着零轴、一条仍在半空。图要说明衰减速度决定因子适合什么调仓频率，而调仓频率直接决定交易成本。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { fill: #64748b; font-size: 14px; }
+      .line-fast { fill: none; stroke: #ea580c; stroke-width: 3.5; }
+      .line-slow { fill: none; stroke: #2563eb; stroke-width: 3.5; }
+      .dot-fast { fill: #ea580c; }
+      .dot-slow { fill: #2563eb; }
+      .label-fast { fill: #c2410c; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .label-slow { fill: #1d4ed8; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .legend { font-size: 15px; font-weight: 700; }
+      .legend-fast { fill: #c2410c; }
+      .legend-slow { fill: #1d4ed8; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .grid { stroke: #334155; }
+        .axis { stroke: #64748b; }
+        .tick { fill: #94a3b8; }
+        .line-fast { stroke: #fb923c; }
+        .line-slow { stroke: #60a5fa; }
+        .dot-fast { fill: #fb923c; }
+        .dot-slow { fill: #60a5fa; }
+        .label-fast { fill: #fdba74; }
+        .label-slow { fill: #93c5fd; }
+        .legend-fast { fill: #fdba74; }
+        .legend-slow { fill: #93c5fd; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="550" rx="24"/>
+  <text class="heading" x="55" y="62">因子衰减：持有期拉长以后，关系还剩下多少</text>
+  <text class="subtle" x="55" y="94">示意：纵轴为不同持有期下的 IC（无量纲），横轴为持有期</text>
+
+  <rect class="panel" x="55" y="130" width="890" height="340" rx="16"/>
+
+  <line class="grid" x1="150" y1="340" x2="920" y2="340"/>
+  <line class="grid" x1="150" y1="260" x2="920" y2="260"/>
+  <line class="grid" x1="150" y1="180" x2="920" y2="180"/>
+  <line class="grid" x1="150" y1="100" x2="920" y2="100"/>
+
+  <text class="tick" x="138" y="425">0.00</text>
+  <text class="tick" x="138" y="345">0.02</text>
+  <text class="tick" x="138" y="265">0.04</text>
+  <text class="tick" x="138" y="185">0.06</text>
+  <text class="tick" x="138" y="105">0.08</text>
+
+  <line class="axis" x1="150" y1="420" x2="920" y2="420"/>
+  <line class="axis" x1="150" y1="420" x2="150" y2="130"/>
+
+  <text class="tick" x="180" y="448" text-anchor="middle">1个月</text>
+  <text class="tick" x="400" y="448" text-anchor="middle">3个月</text>
+  <text class="tick" x="620" y="448" text-anchor="middle">6个月</text>
+  <text class="tick" x="840" y="448" text-anchor="middle">12个月</text>
+
+  <polyline class="line-fast" points="180,120 400,280 620,372 840,404"/>
+  <polyline class="line-slow" points="180,260 400,240 620,252 840,292"/>
+
+  <circle class="dot-fast" cx="180" cy="120" r="7"/>
+  <circle class="dot-fast" cx="400" cy="280" r="7"/>
+  <circle class="dot-fast" cx="620" cy="372" r="7"/>
+  <circle class="dot-fast" cx="840" cy="404" r="7"/>
+
+  <circle class="dot-slow" cx="180" cy="260" r="7"/>
+  <circle class="dot-slow" cx="400" cy="240" r="7"/>
+  <circle class="dot-slow" cx="620" cy="252" r="7"/>
+  <circle class="dot-slow" cx="840" cy="292" r="7"/>
+
+  <text class="label-fast" x="180" y="106">0.075</text>
+  <text class="label-fast" x="400" y="266">0.035</text>
+  <text class="label-fast" x="620" y="358">0.012</text>
+  <text class="label-fast" x="840" y="390">0.004</text>
+
+  <text class="label-slow" x="180" y="246">0.040</text>
+  <text class="label-slow" x="400" y="226">0.045</text>
+  <text class="label-slow" x="620" y="238">0.042</text>
+  <text class="label-slow" x="840" y="278">0.032</text>
+
+  <line class="line-fast" x1="640" y1="160" x2="692" y2="160"/>
+  <text class="legend legend-fast" x="702" y="165">反转、情绪、事件类：快速衰减</text>
+  <line class="line-slow" x1="640" y1="192" x2="692" y2="192"/>
+  <text class="legend legend-slow" x="702" y="197">估值、质量类：缓慢衰减</text>
+
+  <text class="foot" x="55" y="508">反转类因子赚的是很短窗口里的钱，因此必然要求高换手；估值质量类的信息消化慢，适合低频调仓。</text>
+  <text class="foot" x="55" y="538">持有期短于曲线的峰，会在信号最强时卖掉；远长于峰，持有的是已经过期的信号。调仓频率由此确定。</text>
+</svg>
