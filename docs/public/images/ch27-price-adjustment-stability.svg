@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">前复权价格会随之后的每一次除权重算，后复权不会</title>
+  <desc id="desc">两幅对比图，画的是同一段 2020 至 2024 年的历史价格，只是在 2024 年底和 2025 年底各取数一次。左图是前复权：它以最新价格为基准向前调整历史，中间只要再发生一次分红或送转，最新价一变，整段历史都要重算，所以两次取数得到两条平行的线，2025 年底取的那条整体更低。右图是后复权：以上市首日价格为基准向后调整，已经发生过的历史不再变动，两次取数得到的线完全重合。结论是前复权的基准在未来，后复权的基准在过去，只有后者给出的历史值不随取数时间改变。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.6; }
+      .panel-title { fill: #0f172a; font-size: 17px; font-weight: 700; }
+      .axis { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .axis-text { fill: #64748b; font-size: 13px; }
+      .line-old { stroke: #2563eb; stroke-width: 3; fill: none; }
+      .line-new { stroke: #dc2626; stroke-width: 3; fill: none; }
+      .line-stable { stroke: #16a34a; stroke-width: 3; fill: none; }
+      .line-label { font-size: 13.5px; }
+      .lab-old { fill: #1d4ed8; }
+      .lab-new { fill: #b91c1c; }
+      .lab-stable { fill: #15803d; }
+      .gap { stroke: #7c3aed; stroke-width: 2; fill: none; }
+      .gap-label { fill: #6d28d9; font-size: 13.5px; font-weight: 700; }
+      .panel-note { fill: #475569; font-size: 14px; }
+      .footnote { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .panel-title { fill: #f8fafc; }
+        .axis { stroke: #64748b; }
+        .axis-text { fill: #94a3b8; }
+        .line-old { stroke: #60a5fa; }
+        .line-new { stroke: #f87171; }
+        .line-stable { stroke: #22c55e; }
+        .lab-old { fill: #93c5fd; }
+        .lab-new { fill: #fca5a5; }
+        .lab-stable { fill: #86efac; }
+        .gap { stroke: #a78bfa; }
+        .gap-label { fill: #c4b5fd; }
+        .panel-note { fill: #cbd5e1; }
+        .footnote { fill: #cbd5e1; }
+      }
+    </style>
+    <marker id="gap-arrow" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="470" rx="24"/>
+  <text class="heading" x="55" y="58">前复权价格会随之后的每一次除权重算，后复权不会</text>
+  <text class="subtle" x="55" y="88">示意：同一段 2020—2024 年的历史价格，分别在 2024 年底和 2025 年底两次取数</text>
+
+  <rect class="panel" x="40" y="116" width="500" height="286" rx="14"/>
+  <text class="panel-title" x="64" y="150">前复权：以最新价为基准，向前调整历史</text>
+  <path class="axis" d="M80 188 V344"/>
+  <path class="axis" d="M80 344 H512"/>
+  <text class="axis-text" x="56" y="200">价格</text>
+  <text class="axis-text" x="470" y="368">时间</text>
+
+  <path class="line-old" d="M100 250 L480 205"/>
+  <path class="line-new" d="M100 290 L480 245"/>
+  <text class="line-label lab-old" x="104" y="242">2024 年底取数</text>
+  <text class="line-label lab-new" x="104" y="316">2025 年底取数</text>
+
+  <path class="gap" d="M250 232 V272" marker-end="url(#gap-arrow)"/>
+  <text class="gap-label" x="262" y="258">同一段历史，数值不同</text>
+
+  <text class="panel-note" x="64" y="386">最新价一变，整段历史都要重算。</text>
+
+  <rect class="panel" x="580" y="116" width="500" height="286" rx="14"/>
+  <text class="panel-title" x="604" y="150">后复权：以上市首日为基准，向后调整</text>
+  <path class="axis" d="M620 188 V344"/>
+  <path class="axis" d="M620 344 H1052"/>
+  <text class="axis-text" x="596" y="200">价格</text>
+  <text class="axis-text" x="1010" y="368">时间</text>
+
+  <path class="line-stable" d="M640 258 L1020 213"/>
+  <text class="line-label lab-stable" x="644" y="250">两次取数完全重合</text>
+
+  <text class="panel-note" x="604" y="386">已经发生过的历史不再变动，是时点稳定的。</text>
+
+  <text class="footnote" x="55" y="436">两者的收益率序列完全相同，只差一个与日期无关的常数倍；差别在于价格水平，以及前复权的基准会随取数日变化。</text>
+  <text class="footnote" x="55" y="466">所以：存原始成交价和复权因子；需要价格水平时用后复权；只在向人展示时用前复权。</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">同一个报告期有四份记录，回测在每一天只能看到覆盖那天的那一份</title>
+  <desc id="desc">横轴为时间。同一个报告期（2024年度）在数据库里留下四条记录，首尾相接排成一条链：业绩预告（2025年1月20日公告，只有区间）、业绩快报（2025年3月15日公告，具体数字但未经审计）、年报（2025年4月29日公告，审计口径，生效时间最长）、更正后的年报（2026年4月28日公告，追溯调整后的数字）。每一条记录只在下一条出现之前生效。图中一条虚线标出某个回测日2025年6月10日，它落在年报那一段上，说明那天能用的只有年报；而今天直接查数据库，无论问哪一天，得到的都是最后被追加的那条更正后的记录。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .box-opt { fill: #fef3c7; stroke: #d97706; stroke-width: 2; }
+      .box-report { fill: #dbeafe; stroke: #2563eb; stroke-width: 2; }
+      .box-warn { fill: #fee2e2; stroke: #dc2626; stroke-width: 2; }
+      .box-title { fill: #0f172a; font-size: 16px; font-weight: 700; }
+      .box-time { fill: #334155; font-size: 13px; }
+      .axis { stroke: #94a3b8; stroke-width: 2.5; fill: none; }
+      .axis-label { fill: #64748b; font-size: 15px; }
+      .query { stroke: #7c3aed; stroke-width: 2.2; stroke-dasharray: 6 5; fill: none; }
+      .query-label { fill: #6d28d9; font-size: 15px; font-weight: 700; }
+      .query-dot { fill: #7c3aed; }
+      .marker-line { stroke: #64748b; stroke-width: 2; fill: none; }
+      .footnote { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .box-opt { fill: #422006; stroke: #f59e0b; }
+        .box-report { fill: #1e3a8a; stroke: #60a5fa; }
+        .box-warn { fill: #450a0a; stroke: #f87171; }
+        .box-title { fill: #f8fafc; }
+        .box-time { fill: #cbd5e1; }
+        .axis { stroke: #64748b; }
+        .axis-label { fill: #94a3b8; }
+        .query { stroke: #a78bfa; }
+        .query-label { fill: #c4b5fd; }
+        .query-dot { fill: #a78bfa; }
+        .marker-line { stroke: #94a3b8; }
+        .footnote { fill: #cbd5e1; }
+      }
+    </style>
+    <marker id="axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="1090" height="470" rx="24"/>
+  <text class="heading" x="55" y="58">同一个报告期有四份记录，回测只能看到覆盖当天的那一份</text>
+  <text class="subtle" x="55" y="88">示意：横轴为时间；每根横条从记录被公告的那天开始生效，到下一条记录出现为止</text>
+
+  <path class="query" d="M600 124 V336"/>
+  <circle class="query-dot" cx="600" cy="220" r="7"/>
+  <text class="query-label" x="614" y="132">查询时点 2025-06-10</text>
+
+  <rect class="box-opt" x="130" y="180" width="186" height="80" rx="12"/>
+  <text class="box-title" x="146" y="216">业绩预告</text>
+  <text class="box-time" x="146" y="240">2025-01-20 公告</text>
+
+  <rect class="box-opt" x="316" y="180" width="150" height="80" rx="12"/>
+  <text class="box-title" x="332" y="216">业绩快报</text>
+  <text class="box-time" x="332" y="240">2025-03-15 公告</text>
+
+  <rect class="box-report" x="466" y="180" width="360" height="80" rx="12"/>
+  <text class="box-title" x="482" y="216">年报（审计口径）</text>
+  <text class="box-time" x="482" y="240">2025-04-29 公告</text>
+
+  <rect class="box-warn" x="826" y="180" width="170" height="80" rx="12"/>
+  <text class="box-title" x="842" y="216">更正后的年报</text>
+  <text class="box-time" x="842" y="240">2026-04-28 公告</text>
+
+  <path class="axis" d="M100 348 H1030" marker-end="url(#axis-arrow)"/>
+  <text class="axis-label" x="1035" y="353">时间</text>
+  <path class="marker-line" d="M130 260 V348"/>
+  <path class="marker-line" d="M466 260 V348"/>
+  <path class="marker-line" d="M996 260 V348"/>
+  <text class="axis-label" x="130" y="370" text-anchor="middle">2025 年初</text>
+  <text class="axis-label" x="466" y="370" text-anchor="middle">2025 年 4 月底</text>
+  <text class="axis-label" x="996" y="370" text-anchor="middle">今天</text>
+
+  <text class="footnote" x="55" y="424">同一个报告期的数字不是"被修改"，而是"被追加了一条新版本"：新版公告之前，市场上流通的仍是上一版。</text>
+  <text class="footnote" x="55" y="456">虚线那天能用的只有年报那一条；而今天直接查数据库，无论问哪一天，拿到的都是最右边那条更正后的记录。</text>
+</svg>

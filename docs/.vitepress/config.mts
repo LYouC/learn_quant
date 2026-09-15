@@ -144,6 +144,15 @@ export default defineConfig({
             link: '/chapters/26-event-and-alternative-factors'
           }
         ]
+      },
+      {
+        text: '第六部分：因子研究方法',
+        items: [
+          {
+            text: '第27章 数据口径与信息时间',
+            link: '/chapters/27-data-conventions-and-information-time'
+          }
+        ]
       }
     ],
     outline: {
