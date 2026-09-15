@@ -151,6 +151,10 @@ export default defineConfig({
           {
             text: '第27章 数据口径与信息时间',
             link: '/chapters/27-data-conventions-and-information-time'
+          },
+          {
+            text: '第28章 因子预处理',
+            link: '/chapters/28-factor-preprocessing'
           }
         ]
       }

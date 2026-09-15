@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-labelledby="title desc">
+  <title id="title">同一列数字在两种刻度下的相对位置</title>
+  <desc id="desc">两幅图用的是完全相同的七个数值：七只股票的二十日累计涨幅，分别为负百分之十二、负百分之五、零、正百分之五、正百分之十、正百分之十五和正百分之五十五。左图按数值大小定位，原始值与标准化后的 z 分数位置完全相同，最高的那只股票被推到最右端，它和倒数第二只之间相差四十个百分点，而前六只股票加起来的总跨度只有二十七个百分点。右图按名次定位，同样的七只股票等距排列，每个点之间的距离完全相同。图要说明的是标准化只换单位、不改变顺序也不改变距离比例，而排名和分位数会把距离压平，换来的是对异常值免疫。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .panel-title { fill: #0f172a; font-size: 18px; font-weight: 700; }
+      .panel-note { fill: #64748b; font-size: 14px; }
+      .axis { stroke: #cbd5e1; stroke-width: 2; }
+      .dot { fill: #2563eb; }
+      .dot-b { fill: #7c3aed; }
+      .dot-out { fill: #ea580c; }
+      .dot-label { fill: #334155; font-size: 14px; text-anchor: middle; }
+      .dot-label-out { fill: #ea580c; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .bracket { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .bracket-label { fill: #475569; font-size: 13px; text-anchor: middle; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .panel-title { fill: #f8fafc; }
+        .panel-note { fill: #94a3b8; }
+        .axis { stroke: #475569; }
+        .dot { fill: #60a5fa; }
+        .dot-b { fill: #a78bfa; }
+        .dot-out { fill: #fb923c; }
+        .dot-label { fill: #cbd5e1; }
+        .dot-label-out { fill: #fb923c; }
+        .bracket { stroke: #64748b; }
+        .bracket-label { fill: #cbd5e1; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="490" rx="24"/>
+  <text class="heading" x="55" y="62">同一列数字，两种刻度下的相对位置</text>
+  <text class="subtle" x="55" y="94">示意：七只股票的 20 日累计涨幅（%），最高的一只是 +55</text>
+
+  <rect class="panel" x="55" y="125" width="420" height="280" rx="16"/>
+  <text class="panel-title" x="78" y="163">按“差多少”定位</text>
+  <text class="panel-note" x="78" y="190">原始值；标准化后的 z 分数与它位置相同</text>
+
+  <line class="axis" x1="85" y1="300" x2="445" y2="300"/>
+  <line class="axis" x1="85" y1="292" x2="85" y2="308"/>
+  <line class="axis" x1="445" y1="292" x2="445" y2="308"/>
+
+  <circle class="dot" cx="85" cy="300" r="7"/>
+  <circle class="dot" cx="122.6" cy="300" r="7"/>
+  <circle class="dot" cx="149.5" cy="300" r="7"/>
+  <circle class="dot" cx="176.3" cy="300" r="7"/>
+  <circle class="dot" cx="203.2" cy="300" r="7"/>
+  <circle class="dot" cx="230.1" cy="300" r="7"/>
+  <circle class="dot-out" cx="445" cy="300" r="9"/>
+
+  <text class="dot-label" x="85" y="272">−12</text>
+  <text class="dot-label" x="122.6" y="250">−5</text>
+  <text class="dot-label" x="149.5" y="272">0</text>
+  <text class="dot-label" x="176.3" y="250">+5</text>
+  <text class="dot-label" x="203.2" y="272">+10</text>
+  <text class="dot-label" x="230.1" y="250">+15</text>
+  <text class="dot-label-out" x="445" y="272">+55</text>
+
+  <path class="bracket" d="M 85 340 H 230 M 85 340 V 348 M 230 340 V 348"/>
+  <text class="bracket-label" x="157.5" y="368">前六只跨度 27</text>
+  <path class="bracket" d="M 230 340 H 445 M 445 340 V 348"/>
+  <text class="bracket-label" x="340" y="368">最后两只相差 40</text>
+
+  <rect class="panel" x="525" y="125" width="420" height="280" rx="16"/>
+  <text class="panel-title" x="548" y="163">按“排第几”定位</text>
+  <text class="panel-note" x="548" y="190">名次或百分位，相邻两点间距完全相同</text>
+
+  <line class="axis" x1="555" y1="300" x2="915" y2="300"/>
+  <line class="axis" x1="555" y1="292" x2="555" y2="308"/>
+  <line class="axis" x1="915" y1="292" x2="915" y2="308"/>
+
+  <circle class="dot-b" cx="555" cy="300" r="7"/>
+  <circle class="dot-b" cx="615" cy="300" r="7"/>
+  <circle class="dot-b" cx="675" cy="300" r="7"/>
+  <circle class="dot-b" cx="735" cy="300" r="7"/>
+  <circle class="dot-b" cx="795" cy="300" r="7"/>
+  <circle class="dot-b" cx="855" cy="300" r="7"/>
+  <circle class="dot-out" cx="915" cy="300" r="9"/>
+
+  <text class="dot-label" x="555" y="272">−12</text>
+  <text class="dot-label" x="615" y="272">−5</text>
+  <text class="dot-label" x="675" y="272">0</text>
+  <text class="dot-label" x="735" y="272">+5</text>
+  <text class="dot-label" x="795" y="272">+10</text>
+  <text class="dot-label" x="855" y="272">+15</text>
+  <text class="dot-label-out" x="915" y="272">+55</text>
+
+  <path class="bracket" d="M 555 340 H 915 M 555 340 V 348 M 915 340 V 348"/>
+  <text class="bracket-label" x="735" y="368">七只股票等距排列——只看这张图，看不出差多少</text>
+
+  <text class="foot" x="55" y="450">z 分数是线性变换：只换单位，不改变先后顺序，也不改变距离比例。单因子按排序取前 N 名时，标准化不改变任何取舍。</text>
+  <text class="foot" x="55" y="482">排名和分位数把距离压平，“远贵”和“稍贵”变成相邻两个名次；换来的是对异常值完全免疫。</text>
+</svg>
