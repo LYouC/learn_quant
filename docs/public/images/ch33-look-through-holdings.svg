@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" role="img" aria-labelledby="title desc">
+  <title id="title">混合组合中，甲公司的两条持有路径（示意）</title>
+  <desc id="desc">直接持股占账户百分之四。ETF占账户百分之五十，甲公司占ETF净资产百分之六，相乘得到间接持有占账户百分之三。两条路径合计百分之七，超过示意的公司上限百分之五。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+  <rect width="880" height="420" rx="16" fill="#f8fafc"/>
+  <g font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" fill="#0f172a">
+    <text x="32" y="40" font-size="22" font-weight="700">两个证券代码，可能对应同一家公司</text>
+    <text x="32" y="70" font-size="15" fill="#475569">示意｜先乘出各路径占账户的比例，再合并；不计价格与净值差异</text>
+    <rect x="32" y="105" width="255" height="80" rx="10" fill="#dbeafe" stroke="#93c5fd"/>
+    <text x="52" y="137" font-size="18" font-weight="700">直接持有甲公司</text>
+    <text x="52" y="164" font-size="17">占账户 4%</text>
+    <rect x="32" y="230" width="255" height="100" rx="10" fill="#e0f2fe" stroke="#7dd3fc"/>
+    <text x="52" y="262" font-size="18" font-weight="700">持有一只 ETF</text>
+    <text x="52" y="290" font-size="17">ETF 占账户 50%</text>
+    <text x="52" y="315" font-size="16">甲占 ETF 净资产 6%</text>
+    <path d="M 294 145 H 570 L 617 204" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <path d="M 294 280 H 570 L 617 241" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="320" y="128" font-size="18" fill="#1d4ed8">直接路径：4%</text>
+    <text x="312" y="266" font-size="18" fill="#0369a1">间接路径：50% × 6% = 3%</text>
+    <rect x="627" y="165" width="220" height="115" rx="12" fill="#fef3c7" stroke="#fbbf24"/>
+    <text x="647" y="197" font-size="17" font-weight="700">账户对应甲公司的比例</text>
+    <text x="647" y="231" font-size="26" font-weight="700">4% + 3% = 7%</text>
+    <text x="647" y="261" font-size="16" fill="#92400e">超过公司上限 5%（示意）</text>
+    <text x="32" y="375" font-size="17" font-weight="700">检查结论：不能只看直接持股的 4%；应调整直接持股或 ETF 配置。</text>
+    <text x="32" y="401" font-size="14" fill="#475569">其余账户资产未画出。本图用于计算持仓集中度，不代表收益预测。</text>
+  </g>
+</svg>

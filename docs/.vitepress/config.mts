@@ -176,6 +176,14 @@ export default defineConfig({
           {
             text: '第32章 股票池与可投资性过滤',
             link: '/chapters/32-stock-universe-and-investability-filter'
+          },
+          {
+            text: '第33章 组合构建',
+            link: '/chapters/33-portfolio-construction'
+          },
+          {
+            text: '第34章 调仓机制',
+            link: '/chapters/34-rebalancing-mechanisms'
           }
         ]
       }
