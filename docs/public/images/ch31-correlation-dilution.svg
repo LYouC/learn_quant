@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">因子之间越像，等权合成带来的提升越小</title>
+  <desc id="desc">横轴是各因子之间的平均相关系数，从 0 到 0.8，从左往右表示这些因子越来越像；纵轴是等权合成的合成因子 IC，范围 0.04 到 0.13。四条曲线分别是把 2 个、3 个、4 个、6 个 IC 都是 0.05 的因子等权相加的结果，按横纵相关关系计算，为示意值；横向虚线是单个因子的水平 0.05。四个因子彼此不相关时，合成 IC 是 0.10；平均相关系数 0.2 时降到 0.079；0.4 时 0.067；0.6 时 0.060；0.8 时只剩 0.054，此时六因子曲线也只到 0.055，四条线挤在一起。图要说明合成带来的提升由因子之间的不相似程度决定，而不是由因子个数决定。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { fill: #64748b; font-size: 14px; }
+      .ref { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 6; }
+      .ref-label { fill: #64748b; font-size: 14px; font-weight: 700; }
+      .note { fill: #475569; font-size: 15px; }
+      .axis-name { fill: #475569; font-size: 15px; font-weight: 700; }
+      .legend { font-size: 15px; font-weight: 700; }
+      .line-k2 { fill: none; stroke: #ea580c; stroke-width: 3.5; }
+      .line-k3 { fill: none; stroke: #2563eb; stroke-width: 3.5; }
+      .line-k4 { fill: none; stroke: #059669; stroke-width: 3.5; }
+      .line-k6 { fill: none; stroke: #7c3aed; stroke-width: 3.5; }
+      .dot-k2 { fill: #ea580c; }
+      .dot-k3 { fill: #2563eb; }
+      .dot-k4 { fill: #059669; }
+      .dot-k6 { fill: #7c3aed; }
+      .label-k2 { fill: #c2410c; font-size: 14px; font-weight: 700; }
+      .label-k3 { fill: #1d4ed8; font-size: 14px; font-weight: 700; }
+      .label-k4 { fill: #047857; font-size: 14px; font-weight: 700; }
+      .label-k6 { fill: #6d28d9; font-size: 14px; font-weight: 700; }
+      .legend-k2 { fill: #c2410c; }
+      .legend-k3 { fill: #1d4ed8; }
+      .legend-k4 { fill: #047857; }
+      .legend-k6 { fill: #6d28d9; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .grid { stroke: #334155; }
+        .axis { stroke: #64748b; }
+        .tick { fill: #94a3b8; }
+        .ref { stroke: #94a3b8; }
+        .ref-label { fill: #94a3b8; }
+        .note { fill: #cbd5e1; }
+        .axis-name { fill: #cbd5e1; }
+        .line-k2 { stroke: #fb923c; }
+        .line-k3 { stroke: #60a5fa; }
+        .line-k4 { stroke: #34d399; }
+        .line-k6 { stroke: #a78bfa; }
+        .dot-k2 { fill: #fb923c; }
+        .dot-k3 { fill: #60a5fa; }
+        .dot-k4 { fill: #34d399; }
+        .dot-k6 { fill: #a78bfa; }
+        .label-k2 { fill: #fdba74; }
+        .label-k3 { fill: #93c5fd; }
+        .label-k4 { fill: #6ee7b7; }
+        .label-k6 { fill: #c4b5fd; }
+        .legend-k2 { fill: #fdba74; }
+        .legend-k3 { fill: #93c5fd; }
+        .legend-k4 { fill: #6ee7b7; }
+        .legend-k6 { fill: #c4b5fd; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="570" rx="24"/>
+  <text class="heading" x="55" y="58">因子之间越像，等权合成的提升越小</text>
+  <text class="subtle" x="55" y="88">四个成分因子的 IC 都是 0.05；纵轴为按相关性与因子个数算出的等权合成 IC（示意）</text>
+
+  <line class="line-k2" x1="60" y1="118" x2="108" y2="118"/>
+  <text class="legend legend-k2" x="118" y="123">2 个因子</text>
+  <line class="line-k3" x1="290" y1="118" x2="338" y2="118"/>
+  <text class="legend legend-k3" x="348" y="123">3 个因子</text>
+  <line class="line-k4" x1="520" y1="118" x2="568" y2="118"/>
+  <text class="legend legend-k4" x="578" y="123">4 个因子</text>
+  <line class="line-k6" x1="750" y1="118" x2="798" y2="118"/>
+  <text class="legend legend-k6" x="808" y="123">6 个因子</text>
+
+  <rect class="panel" x="55" y="135" width="890" height="370" rx="16"/>
+
+  <line class="grid" x1="180" y1="150" x2="920" y2="150"/>
+  <line class="grid" x1="180" y1="217" x2="920" y2="217"/>
+  <line class="grid" x1="180" y1="283" x2="920" y2="283"/>
+  <line class="grid" x1="180" y1="350" x2="920" y2="350"/>
+  <line class="grid" x1="180" y1="417" x2="920" y2="417"/>
+
+  <text class="tick" x="170" y="155" text-anchor="end">0.13</text>
+  <text class="tick" x="170" y="222" text-anchor="end">0.11</text>
+  <text class="tick" x="170" y="288" text-anchor="end">0.09</text>
+  <text class="tick" x="170" y="355" text-anchor="end">0.07</text>
+  <text class="tick" x="170" y="422" text-anchor="end">0.05</text>
+
+  <line class="axis" x1="180" y1="450" x2="920" y2="450"/>
+  <line class="axis" x1="180" y1="482" x2="180" y2="145"/>
+
+  <line class="ref" x1="180" y1="417" x2="860" y2="417"/>
+  <text class="ref-label" x="192" y="409">虚线：单个因子的 IC 0.05</text>
+
+  <line class="axis" x1="180" y1="450" x2="180" y2="460"/>
+  <line class="axis" x1="350" y1="450" x2="350" y2="460"/>
+  <line class="axis" x1="520" y1="450" x2="520" y2="460"/>
+  <line class="axis" x1="690" y1="450" x2="690" y2="460"/>
+  <line class="axis" x1="860" y1="450" x2="860" y2="460"/>
+
+  <text class="tick" x="180" y="478" text-anchor="middle">0</text>
+  <text class="tick" x="350" y="478" text-anchor="middle">0.2</text>
+  <text class="tick" x="520" y="478" text-anchor="middle">0.4</text>
+  <text class="tick" x="690" y="478" text-anchor="middle">0.6</text>
+  <text class="tick" x="860" y="478" text-anchor="middle">0.8</text>
+  <text class="axis-name" x="60" y="500">合成 IC</text>
+  <text class="axis-name" x="920" y="500" text-anchor="end">因子之间的平均相关系数</text>
+
+  <polyline class="line-k6" points="180,175 350,295 520,348 690,379 860,401"/>
+  <polyline class="line-k4" points="180,250 350,320 520,359 690,384 860,403"/>
+  <polyline class="line-k3" points="180,295 350,339 520,368 690,389 860,404"/>
+  <polyline class="line-k2" points="180,348 350,368 520,384 690,397 860,408"/>
+
+  <circle class="dot-k6" cx="180" cy="175" r="6"/>
+  <circle class="dot-k6" cx="350" cy="295" r="6"/>
+  <circle class="dot-k6" cx="520" cy="348" r="6"/>
+  <circle class="dot-k6" cx="690" cy="379" r="6"/>
+  <circle class="dot-k6" cx="860" cy="401" r="7"/>
+
+  <circle class="dot-k4" cx="180" cy="250" r="6"/>
+  <circle class="dot-k4" cx="350" cy="320" r="6"/>
+  <circle class="dot-k4" cx="520" cy="359" r="6"/>
+  <circle class="dot-k4" cx="690" cy="384" r="6"/>
+  <circle class="dot-k4" cx="860" cy="403" r="7"/>
+
+  <circle class="dot-k3" cx="180" cy="295" r="6"/>
+  <circle class="dot-k3" cx="350" cy="339" r="6"/>
+  <circle class="dot-k3" cx="520" cy="368" r="6"/>
+  <circle class="dot-k3" cx="690" cy="389" r="6"/>
+  <circle class="dot-k3" cx="860" cy="404" r="7"/>
+
+  <circle class="dot-k2" cx="180" cy="348" r="6"/>
+  <circle class="dot-k2" cx="350" cy="368" r="6"/>
+  <circle class="dot-k2" cx="520" cy="384" r="6"/>
+  <circle class="dot-k2" cx="690" cy="397" r="6"/>
+  <circle class="dot-k2" cx="860" cy="408" r="7"/>
+
+  <text class="label-k6" x="194" y="170">0.123</text>
+  <text class="label-k4" x="194" y="245">0.100</text>
+  <text class="label-k3" x="194" y="290">0.087</text>
+  <text class="label-k2" x="194" y="334">0.071</text>
+
+  <text class="note" x="915" y="425" text-anchor="end">相关系数升到 0.8 时</text>
+  <text class="note" x="915" y="445" text-anchor="end">四条线挤在 0.053 到 0.055</text>
+
+  <text class="foot" x="55" y="542">彼此不相关时，四个 IC 都是 0.05 的因子能把合成 IC 提到 0.10；平均相关系数 0.3 时只剩 0.073；相关系数 0.8 时只有 0.054。</text>
+  <text class="foot" x="55" y="570">加因子的收益来自因子之间的不相似，不来自个数——凑第 5、第 6 个相关因子，不如把已有因子的预处理和覆盖率做好。</text>
+</svg>
