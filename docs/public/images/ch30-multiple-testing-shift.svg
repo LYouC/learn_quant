@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title" aria-describedby="desc">
+  <title id="title">同一个 t = 2.1 在三种尝试次数下的常见程度</title>
+  <desc id="desc">横轴是 t 值。蓝线是只测 1 个版本时 t 值的分布，最高点在 0，t = 2.1 落在最右侧的尾巴上；紫线是把 20 个版本都跑完、留下最好的那个时 t 值的分布，最高点右移到 1.8 左右，t = 2.1 落在曲线中段；灰线是把 1000 个版本都跑完、留下最好的那个时 t 值的分布，最高点继续右移到 3.1 左右，t = 2.1 已经落在曲线左端之外。图要说明同一个 t 值算不算显著，取决于它是从几个版本里挑出来的。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { fill: #64748b; font-size: 14px; }
+      .axis-name { fill: #475569; font-size: 15px; font-weight: 700; }
+      .line-1 { fill: none; stroke: #2563eb; stroke-width: 3.5; }
+      .line-20 { fill: none; stroke: #7c3aed; stroke-width: 3.5; }
+      .line-1000 { fill: none; stroke: #64748b; stroke-width: 3.5; }
+      .mark { stroke: #dc2626; stroke-width: 2.5; stroke-dasharray: 9 7; }
+      .mark-label { fill: #b91c1c; font-size: 15px; font-weight: 700; text-anchor: middle; }
+      .legend { font-size: 15px; font-weight: 700; }
+      .legend-1 { fill: #1d4ed8; }
+      .legend-20 { fill: #6d28d9; }
+      .legend-1000 { fill: #475569; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .axis { stroke: #64748b; }
+        .tick { fill: #94a3b8; }
+        .axis-name { fill: #cbd5e1; }
+        .line-1 { stroke: #60a5fa; }
+        .line-20 { stroke: #a78bfa; }
+        .line-1000 { stroke: #94a3b8; }
+        .mark { stroke: #f87171; }
+        .mark-label { fill: #fca5a5; }
+        .legend-1 { fill: #93c5fd; }
+        .legend-20 { fill: #c4b5fd; }
+        .legend-1000 { fill: #cbd5e1; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="570" rx="24"/>
+  <text class="heading" x="55" y="58">同一个 t = 2.1，试过的版本越多越不值钱</text>
+  <text class="subtle" x="55" y="88">纵轴是相对频繁程度：三条曲线各自缩放到同一高度，所以只看它们的位置，不要比较高低</text>
+
+  <line class="line-1" x1="60" y1="118" x2="108" y2="118"/>
+  <text class="legend legend-1" x="118" y="123">只测 1 个版本</text>
+  <line class="line-20" x1="330" y1="118" x2="378" y2="118"/>
+  <text class="legend legend-20" x="388" y="123">测 20 个、取最好的</text>
+  <line class="line-1000" x1="650" y1="118" x2="698" y2="118"/>
+  <text class="legend legend-1000" x="708" y="123">测 1000 个、取最好的</text>
+
+  <rect class="panel" x="55" y="135" width="890" height="370" rx="16"/>
+
+  <line class="axis" x1="150" y1="450" x2="920" y2="450"/>
+  <line class="axis" x1="150" y1="450" x2="150" y2="200"/>
+  <line class="axis" x1="150" y1="200" x2="143" y2="212"/>
+  <line class="axis" x1="150" y1="200" x2="157" y2="212"/>
+
+  <line class="axis" x1="192.8" y1="450" x2="192.8" y2="460"/>
+  <line class="axis" x1="278.3" y1="450" x2="278.3" y2="460"/>
+  <line class="axis" x1="363.9" y1="450" x2="363.9" y2="460"/>
+  <line class="axis" x1="449.4" y1="450" x2="449.4" y2="460"/>
+  <line class="axis" x1="535.0" y1="450" x2="535.0" y2="460"/>
+  <line class="axis" x1="620.6" y1="450" x2="620.6" y2="460"/>
+  <line class="axis" x1="706.1" y1="450" x2="706.1" y2="460"/>
+  <line class="axis" x1="791.7" y1="450" x2="791.7" y2="460"/>
+  <line class="axis" x1="877.2" y1="450" x2="877.2" y2="460"/>
+
+  <text class="tick" x="192.8" y="478" text-anchor="middle">-3</text>
+  <text class="tick" x="278.3" y="478" text-anchor="middle">-2</text>
+  <text class="tick" x="363.9" y="478" text-anchor="middle">-1</text>
+  <text class="tick" x="449.4" y="478" text-anchor="middle">0</text>
+  <text class="tick" x="535.0" y="478" text-anchor="middle">1</text>
+  <text class="tick" x="620.6" y="478" text-anchor="middle">2</text>
+  <text class="tick" x="706.1" y="478" text-anchor="middle">3</text>
+  <text class="tick" x="791.7" y="478" text-anchor="middle">4</text>
+  <text class="tick" x="877.2" y="478" text-anchor="middle">5</text>
+
+  <text class="axis-name" x="60" y="500">相对频繁程度</text>
+  <text class="axis-name" x="915" y="500" text-anchor="end">t 值</text>
+
+  <polyline class="line-1" points="150,449 159,449 167,449 176,448 184,448 193,447 201,446 210,445 218,443 227,441 236,439 244,435 253,432 261,427 270,421 278,415 287,407 295,398 304,389 313,378 321,366 330,352 338,338 347,323 355,308 364,292 372,277 381,261 390,246 398,233 407,221 415,210 424,201 432,195 441,191 449,190 458,191 467,195 475,201 484,210 492,221 501,233 509,246 518,261 526,277 535,292 544,308 552,323 561,338 569,352 578,366 586,378 595,389 603,398 612,407 621,415 629,421 638,427 646,432 655,435 663,439 672,441 680,443 689,445 698,446 706,447 715,448 723,448 732,449 740,449 749,449 757,450 766,450 775,450 783,450 792,450 800,450 809,450 817,450 826,450 834,450 843,450 852,450 860,450 869,450 877,450 886,450 894,450 903,450 911,450 920,450"/>
+
+  <polyline class="line-1000" points="484,450 492,450 501,450 509,450 518,450 526,450 535,450 544,450 552,450 561,450 569,450 578,450 586,450 595,450 603,450 612,450 621,450 629,450 638,450 646,450 655,449 663,443 672,423 680,382 689,321 698,257 706,209 715,190 723,199 732,228 740,266 749,305 757,341 766,370 775,393 783,410 792,423 800,432 809,438 817,442 826,445 834,447 843,448 852,449 860,449 869,450 877,450 886,450 894,450 903,450 911,450 920,450"/>
+
+  <polyline class="line-20" points="432,450 441,450 449,450 458,450 467,450 475,450 484,449 492,448 501,445 509,439 518,429 526,413 535,390 544,360 552,325 561,287 569,251 578,221 586,200 595,190 603,191 612,202 621,221 629,245 638,271 646,298 655,324 663,348 672,368 680,386 689,400 698,412 706,422 715,429 723,434 732,439 740,442 749,444 757,446 766,447 775,448 783,449 792,449 800,449 809,450 817,450 826,450 834,450 843,450 852,450 860,450 869,450 877,450 886,450 894,450 903,450 911,450 920,450"/>
+
+  <line class="mark" x1="629" y1="450" x2="629" y2="176"/>
+  <text class="mark-label" x="629" y="166">t = 2.1</text>
+
+  <text class="foot" x="55" y="540">只测 1 个版本时，t = 2.1 落在蓝线最右侧的尾巴上，确实稀有；挑过 20 个版本之后，2.1 落在紫线的中段，属于多半能挑到的高度。</text>
+  <text class="foot" x="55" y="568">挑过 1000 个版本之后，2.1 已经落在灰线左端之外，低于常见水平。每条曲线的最高点就是它最常见的 t 值：蓝线 0、紫线 1.8、灰线 3.1。</text>
+</svg>

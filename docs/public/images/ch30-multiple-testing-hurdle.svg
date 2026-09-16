@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+  <title id="title">试过的版本数与门槛：样本越短、试得越多，要求越高</title>
+  <desc id="desc">横轴是同一个因子研究里试过的版本数，从左到右分别是 1、10、100、1000 和 10000，每一格是十倍；纵轴是纯噪声下最高夏普的期望值，也就是策略必须超过的门槛。三条线分别对应 5 年、10 年和 20 年样本。只试过 1 个版本时门槛为零；试过 1000 个版本时，5 年样本的门槛约为 1.46，10 年样本约为 1.03，20 年样本约为 0.73；试到 10000 个版本，三条线分别升到约 1.73、1.22 和 0.86。图中另有一条夏普等于 1.0 的虚线作参照。图要说明判断一个夏普值是否可信，必须同时知道样本有多长和试过多少次。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .grid { stroke: #e2e8f0; stroke-width: 1; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { fill: #64748b; font-size: 14px; }
+      .ref { stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 8 6; }
+      .ref-label { fill: #64748b; font-size: 14px; font-weight: 700; }
+      .line-short { fill: none; stroke: #ea580c; stroke-width: 3.5; }
+      .line-mid { fill: none; stroke: #2563eb; stroke-width: 3.5; }
+      .line-long { fill: none; stroke: #059669; stroke-width: 3.5; }
+      .dot-short { fill: #ea580c; }
+      .dot-mid { fill: #2563eb; }
+      .dot-long { fill: #059669; }
+      .label-short { fill: #c2410c; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .label-mid { fill: #1d4ed8; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .label-long { fill: #047857; font-size: 14px; font-weight: 700; text-anchor: middle; }
+      .axis-name { fill: #475569; font-size: 15px; font-weight: 700; }
+      .legend { font-size: 15px; font-weight: 700; }
+      .legend-short { fill: #c2410c; }
+      .legend-mid { fill: #1d4ed8; }
+      .legend-long { fill: #047857; }
+      .foot { fill: #475569; font-size: 15px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .panel { fill: #1f2937; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .grid { stroke: #334155; }
+        .axis { stroke: #64748b; }
+        .tick { fill: #94a3b8; }
+        .ref { stroke: #94a3b8; }
+        .ref-label { fill: #94a3b8; }
+        .line-short { stroke: #fb923c; }
+        .line-mid { stroke: #60a5fa; }
+        .line-long { stroke: #34d399; }
+        .dot-short { fill: #fb923c; }
+        .dot-mid { fill: #60a5fa; }
+        .dot-long { fill: #34d399; }
+        .label-short { fill: #fdba74; }
+        .label-mid { fill: #93c5fd; }
+        .label-long { fill: #6ee7b7; }
+        .axis-name { fill: #cbd5e1; }
+        .legend-short { fill: #fdba74; }
+        .legend-mid { fill: #93c5fd; }
+        .legend-long { fill: #6ee7b7; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="570" rx="24"/>
+  <text class="heading" x="55" y="58">试过的版本数与门槛：多少夏普才算真的有效</text>
+  <text class="subtle" x="55" y="88">纵轴为纯噪声下"最高夏普"的期望值，即策略必须超过的门槛；曲线为计算结果，读数已取整</text>
+
+  <line class="line-short" x1="60" y1="118" x2="108" y2="118"/>
+  <text class="legend legend-short" x="118" y="123">5 年样本</text>
+  <line class="line-mid" x1="300" y1="118" x2="348" y2="118"/>
+  <text class="legend legend-mid" x="358" y="123">10 年样本</text>
+  <line class="line-long" x1="540" y1="118" x2="588" y2="118"/>
+  <text class="legend legend-long" x="598" y="123">20 年样本</text>
+
+  <rect class="panel" x="55" y="135" width="890" height="370" rx="16"/>
+
+  <line class="grid" x1="150" y1="150" x2="920" y2="150"/>
+  <line class="grid" x1="150" y1="225" x2="920" y2="225"/>
+  <line class="grid" x1="150" y1="375" x2="920" y2="375"/>
+
+  <text class="tick" x="140" y="155" text-anchor="end">2.0</text>
+  <text class="tick" x="140" y="230" text-anchor="end">1.5</text>
+  <text class="tick" x="140" y="305" text-anchor="end">1.0</text>
+  <text class="tick" x="140" y="380" text-anchor="end">0.5</text>
+  <text class="tick" x="140" y="455" text-anchor="end">0.0</text>
+
+  <line class="axis" x1="150" y1="450" x2="920" y2="450"/>
+  <line class="axis" x1="150" y1="482" x2="150" y2="145"/>
+
+  <line class="ref" x1="150" y1="300" x2="920" y2="300"/>
+  <text class="ref-label" x="162" y="292">虚线：回测夏普 1.0</text>
+
+  <line class="axis" x1="180" y1="450" x2="180" y2="460"/>
+  <line class="axis" x1="350" y1="450" x2="350" y2="460"/>
+  <line class="axis" x1="520" y1="450" x2="520" y2="460"/>
+  <line class="axis" x1="690" y1="450" x2="690" y2="460"/>
+  <line class="axis" x1="860" y1="450" x2="860" y2="460"/>
+
+  <text class="tick" x="180" y="478" text-anchor="middle">1</text>
+  <text class="tick" x="350" y="478" text-anchor="middle">10</text>
+  <text class="tick" x="520" y="478" text-anchor="middle">100</text>
+  <text class="tick" x="690" y="478" text-anchor="middle">1000</text>
+  <text class="tick" x="860" y="478" text-anchor="middle">10000</text>
+  <text class="axis-name" x="60" y="500">门槛夏普</text>
+  <text class="axis-name" x="915" y="500" text-anchor="end">试过的版本数</text>
+
+  <polyline class="line-short" points="180,450 350,345 520,281 690,231 860,191"/>
+  <polyline class="line-mid" points="180,450 350,375 520,330 690,296 860,267"/>
+  <polyline class="line-long" points="180,450 350,398 520,365 690,341 860,321"/>
+
+  <circle class="dot-short" cx="180" cy="450" r="6"/>
+  <circle class="dot-short" cx="350" cy="345" r="6"/>
+  <circle class="dot-short" cx="520" cy="281" r="6"/>
+  <circle class="dot-short" cx="690" cy="231" r="6"/>
+  <circle class="dot-short" cx="860" cy="191" r="7"/>
+
+  <circle class="dot-mid" cx="180" cy="450" r="6"/>
+  <circle class="dot-mid" cx="350" cy="375" r="6"/>
+  <circle class="dot-mid" cx="520" cy="330" r="6"/>
+  <circle class="dot-mid" cx="690" cy="296" r="6"/>
+  <circle class="dot-mid" cx="860" cy="267" r="7"/>
+
+  <circle class="dot-long" cx="180" cy="450" r="6"/>
+  <circle class="dot-long" cx="350" cy="398" r="6"/>
+  <circle class="dot-long" cx="520" cy="365" r="6"/>
+  <circle class="dot-long" cx="690" cy="341" r="6"/>
+  <circle class="dot-long" cx="860" cy="321" r="7"/>
+
+  <text class="label-short" x="860" y="177">1.73</text>
+  <text class="label-mid" x="860" y="253">1.22</text>
+  <text class="label-long" x="860" y="307">0.86</text>
+
+  <text class="label-short" x="690" y="217">1.46</text>
+  <text class="label-mid" x="690" y="282">1.03</text>
+  <text class="label-long" x="690" y="327">0.73</text>
+
+  <text class="foot" x="55" y="542">只试过 1 个版本时，门槛就是 0；试过 1000 个版本时，五年样本必须做到夏普 1.46 以上，才算超过噪声的期望水平。</text>
+  <text class="foot" x="55" y="570">同样的夏普 1.0，用二十年样本只试几次时远超门槛，用五年样本试上千次时连门槛都够不到。样本长度与试错次数必须一起看。</text>
+</svg>

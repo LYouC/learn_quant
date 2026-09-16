@@ -159,6 +159,19 @@ export default defineConfig({
           {
             text: '第29章 单因子检验',
             link: '/chapters/29-single-factor-testing'
+          },
+          {
+            text: '第30章 识别无效和伪因子',
+            link: '/chapters/30-invalid-and-spurious-factors'
+          }
+        ]
+      },
+      {
+        text: '第七部分：多因子选股模型',
+        items: [
+          {
+            text: '第31章 因子组合',
+            link: '/chapters/31-factor-combination'
           }
         ]
       }
