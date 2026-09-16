@@ -172,6 +172,10 @@ export default defineConfig({
           {
             text: '第31章 因子组合',
             link: '/chapters/31-factor-combination'
+          },
+          {
+            text: '第32章 股票池与可投资性过滤',
+            link: '/chapters/32-stock-universe-and-investability-filter'
           }
         ]
       }

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" width="100%" role="img" aria-labelledby="ch32funnelTitle ch32funnelDesc">
+  <title id="ch32funnelTitle">股票池的两条过滤线：交易上做不到与业务上不该持有</title>
+  <desc id="ch32funnelDesc">全市场股票先经过第一条线剔除无法成交的股票，得到可成交的股票；再经过第二条线剔除主动排除的股票，得到可进入排序的个股池，最后送入因子打分与排序。两条线各自带走的不同类型股票分别列在右侧。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    .tt{font:500 14px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#2C2C2A}
+    .tm{font:400 12px system-ui,-apple-system,"Segoe UI",sans-serif;fill:#5F5E5A}
+    .gA{fill:#F1EFE8;stroke:#B4B2A9;stroke-width:0.5}
+    .gB{fill:#E6F1FB;stroke:#185FA5;stroke-width:0.5}
+    .gC{fill:#FAEEDA;stroke:#854F0B;stroke-width:0.5}
+    .gR{fill:#F8FAFC;stroke:#B4B2A9;stroke-width:0.5;stroke-dasharray:4 3}
+    .ln{stroke:#888780;stroke-width:1.5;fill:none}
+    .ld{stroke:#B4B2A9;stroke-width:0.5;stroke-dasharray:3 3;fill:none}
+    @media (prefers-color-scheme: dark){
+      .tt{fill:#F1F5F9}
+      .tm{fill:#CBD5E1}
+      .gA{fill:#2C2C2A;stroke:#B4B2A9}
+      .gB{fill:#042C53;stroke:#85B7EB}
+      .gC{fill:#412402;stroke:#EF9F27}
+      .gR{fill:#1E293B;stroke:#94A3B8}
+      .ln{stroke:#94A3B8}
+      .ld{stroke:#94A3B8}
+    }
+  </style>
+
+  <rect class="gA" x="40" y="40" width="340" height="52" rx="8"/>
+  <text class="tt" x="210" y="62" text-anchor="middle">全市场股票</text>
+  <text class="tm" x="210" y="80" text-anchor="middle">沪深北三个交易所的全部上市公司</text>
+
+  <line class="ln" x1="210" y1="92" x2="210" y2="104" marker-end="url(#arrow)"/>
+
+  <rect class="gB" x="40" y="106" width="340" height="40" rx="8"/>
+  <text class="tt" x="210" y="126" text-anchor="middle" dominant-baseline="central">第一条线 · 交易上做不到</text>
+
+  <line class="ln" x1="210" y1="146" x2="210" y2="158" marker-end="url(#arrow)"/>
+
+  <rect class="gA" x="40" y="160" width="340" height="52" rx="8"/>
+  <text class="tt" x="210" y="182" text-anchor="middle">可成交的股票</text>
+  <text class="tm" x="210" y="200" text-anchor="middle">下单真的能成交的那些</text>
+
+  <line class="ln" x1="210" y1="212" x2="210" y2="224" marker-end="url(#arrow)"/>
+
+  <rect class="gC" x="40" y="226" width="340" height="40" rx="8"/>
+  <text class="tt" x="210" y="246" text-anchor="middle" dominant-baseline="central">第二条线 · 业务上不该持有</text>
+
+  <line class="ln" x1="210" y1="266" x2="210" y2="278" marker-end="url(#arrow)"/>
+
+  <rect class="gA" x="40" y="280" width="340" height="52" rx="8"/>
+  <text class="tt" x="210" y="302" text-anchor="middle">可进入排序的个股池</text>
+  <text class="tm" x="210" y="320" text-anchor="middle">本章要交付的第一张名单</text>
+
+  <line class="ln" x1="210" y1="332" x2="210" y2="344" marker-end="url(#arrow)"/>
+
+  <rect class="gR" x="40" y="346" width="340" height="44" rx="8"/>
+  <text class="tt" x="210" y="368" text-anchor="middle" dominant-baseline="central">因子打分与排序（第31章）</text>
+
+  <line class="ld" x1="380" y1="126" x2="400" y2="126"/>
+  <rect class="gB" x="400" y="94" width="240" height="64" rx="8"/>
+  <text class="tm" x="414" y="114">这条线带走什么</text>
+  <text class="tt" x="414" y="134">上市初期 · 停牌 · 一字板</text>
+  <text class="tt" x="414" y="150">成交额小到无法成交</text>
+
+  <line class="ld" x1="380" y1="246" x2="400" y2="246"/>
+  <rect class="gC" x="400" y="214" width="240" height="64" rx="8"/>
+  <text class="tm" x="414" y="234">这条线带走什么</text>
+  <text class="tt" x="414" y="254">ST 与退市整理股票</text>
+  <text class="tt" x="414" y="270">财务硬信号 · 微盘</text>
+
+  <text class="tm" x="40" y="414">两条线在减少股票数量的同时，也一起改变了池子的市值与行业构成。</text>
+</svg>
