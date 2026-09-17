@@ -186,6 +186,15 @@ export default defineConfig({
             link: '/chapters/34-rebalancing-mechanisms'
           }
         ]
+      },
+      {
+        text: '第八部分：策略回测与真实评估',
+        items: [
+          {
+            text: '第35章 回测系统的金融逻辑',
+            link: '/chapters/35-financial-logic-of-backtesting'
+          }
+        ]
       }
     ],
     outline: {

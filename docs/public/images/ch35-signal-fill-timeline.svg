@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="290" viewBox="0 0 960 290" role="img" aria-labelledby="title desc">
+<title id="title">成交前后的收益归属（示意）</title><desc id="desc">周一收盘10元，盘后形成信号，周二以11元成交，收盘仍11元。隔夜上涨不属于新买入账户。</desc>
+<rect width="960" height="290" rx="16" fill="#f1f5f9"/>
+<g font-family="Microsoft YaHei, sans-serif" text-anchor="middle">
+<text x="480" y="36" font-size="23" font-weight="bold" fill="#0f172a">先看到信号，再成交，最后计算持仓收益（示意）</text>
+<path d="M90 132 H873" stroke="#64748b" stroke-width="4"/><path d="M873 132 l-14 -8 v16 z" fill="#64748b"/>
+<g fill="#334155"><circle cx="130" cy="132" r="8"/><circle cx="355" cy="132" r="8"/></g>
+<g fill="#0f766e"><circle cx="610" cy="132" r="8"/><circle cx="830" cy="132" r="8"/></g>
+<g font-size="19" fill="#0f172a"><text x="130" y="94">周一收盘</text><text x="355" y="94">周一盘后</text><text x="610" y="94">周二成交</text><text x="830" y="94">周二收盘</text><text x="130" y="171">10元／股</text><text x="355" y="171">完成打分</text><text x="610" y="171">11元／股</text><text x="830" y="171">11元／股</text></g>
+<rect x="65" y="205" width="495" height="52" rx="8" fill="#fee2e2"/><text x="312" y="237" font-size="18" fill="#991b1b">隔夜涨10%：新持仓尚未建立，不能计入收益</text>
+<rect x="580" y="205" width="325" height="52" rx="8" fill="#ccfbf1"/><text x="742" y="237" font-size="18" fill="#115e59">成交后持平：价格收益0，另扣费用</text>
+</g></svg>
