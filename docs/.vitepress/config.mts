@@ -193,6 +193,10 @@ export default defineConfig({
           {
             text: '第35章 回测系统的金融逻辑',
             link: '/chapters/35-financial-logic-of-backtesting'
+          },
+          {
+            text: '第36章 策略绩效分析',
+            link: '/chapters/36-strategy-performance-analysis'
           }
         ]
       }

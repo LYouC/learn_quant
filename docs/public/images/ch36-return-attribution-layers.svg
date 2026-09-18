@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">一次超额收益拆成行业配置、风格暴露与行业内选股三段（示意）</title>
+  <desc id="desc">把 12 个百分点的超额收益拆成三段。第一段 4.0 个百分点来自行业配置，即超配了当年涨得最好的行业，复现它要求判断对行业而不是公司。第二段 5.0 个百分点来自风格暴露，即持仓市值中位数只有基准的四分之一，这属于规模下沉而不是选股能力，大盘风格占优的年份会反过来。第三段 3.0 个百分点来自行业内选股，即在同一行业里挑得更好，只有这一段不依赖行业与风格行情。完整分解还要处理交互项与多期平均，方法属于第38章。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .scale-label { fill: #64748b; font-size: 14px; }
+      .scale-tick { stroke: #94a3b8; stroke-width: 1.6; }
+      .seg-industry { fill: #b45309; }
+      .seg-style { fill: #4338ca; }
+      .seg-stock { fill: #0f766e; }
+      .seg-label { fill: #ffffff; font-size: 16px; font-weight: 700; }
+      .seg-value { fill: #ffffff; font-size: 15px; }
+      .card { fill: #ffffff; stroke: #cbd5e1; }
+      .card-title-industry { fill: #b45309; font-size: 16px; font-weight: 700; }
+      .card-title-style { fill: #4338ca; font-size: 16px; font-weight: 700; }
+      .card-title-stock { fill: #0f766e; font-size: 16px; font-weight: 700; }
+      .card-body { fill: #475569; font-size: 14px; }
+      .foot { fill: #475569; font-size: 14px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .scale-label { fill: #94a3b8; }
+        .scale-tick { stroke: #64748b; }
+        .seg-industry { fill: #f59e0b; }
+        .seg-style { fill: #818cf8; }
+        .seg-stock { fill: #2dd4bf; }
+        .seg-label { fill: #0f172a; }
+        .seg-value { fill: #1e293b; }
+        .card { fill: #1f2937; stroke: #475569; }
+        .card-title-industry { fill: #fcd34d; }
+        .card-title-style { fill: #a5b4fc; }
+        .card-title-stock { fill: #5eead4; }
+        .card-body { fill: #cbd5e1; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="540" rx="24"/>
+  <text class="heading" x="55" y="58">同一次超额收益，扣掉两层暴露之后才是选择</text>
+  <text class="subtle" x="55" y="88">示意拆分｜把 12 个百分点的超额收益拆成三段，看每一段要求你具备什么能力</text>
+
+  <text class="scale-label" x="90" y="136" text-anchor="middle">0</text>
+  <text class="scale-label" x="361" y="136" text-anchor="middle">4.0</text>
+  <text class="scale-label" x="703" y="136" text-anchor="middle">9.0</text>
+  <text class="scale-label" x="910" y="136" text-anchor="middle">12.0</text>
+  <text class="scale-label" x="925" y="136" text-anchor="start">个百分点</text>
+  <g class="scale-tick">
+    <line x1="90" y1="146" x2="90" y2="164"/>
+    <line x1="361" y1="146" x2="361" y2="164"/>
+    <line x1="703" y1="146" x2="703" y2="164"/>
+    <line x1="910" y1="146" x2="910" y2="164"/>
+  </g>
+  <line class="scale-tick" x1="90" y1="164" x2="910" y2="164"/>
+
+  <rect class="seg-industry" x="90" y="182" width="271" height="80" rx="8"/>
+  <text class="seg-label" x="225" y="216" text-anchor="middle">行业配置</text>
+  <text class="seg-value" x="225" y="242" text-anchor="middle">4.0 个百分点</text>
+
+  <rect class="seg-style" x="365" y="182" width="338" height="80" rx="8"/>
+  <text class="seg-label" x="534" y="216" text-anchor="middle">风格暴露（市值下沉）</text>
+  <text class="seg-value" x="534" y="242" text-anchor="middle">5.0 个百分点</text>
+
+  <rect class="seg-stock" x="707" y="182" width="203" height="80" rx="8"/>
+  <text class="seg-label" x="808" y="216" text-anchor="middle">行业内选股</text>
+  <text class="seg-value" x="808" y="242" text-anchor="middle">3.0 个百分点</text>
+
+  <rect class="card" x="90" y="300" width="271" height="176" rx="12"/>
+  <text class="card-title-industry" x="110" y="332">① 超配了涨得最好的行业</text>
+  <text class="card-body" x="110" y="360">复制这一段，要求你判断</text>
+  <text class="card-body" x="110" y="382">对行业，而不是判断公司。</text>
+  <text class="card-body" x="110" y="404">换一年行业轮动方向不同，</text>
+  <text class="card-body" x="110" y="426">同样的配置会变成负贡献。</text>
+
+  <rect class="card" x="365" y="300" width="338" height="176" rx="12"/>
+  <text class="card-title-style" x="385" y="332">② 持仓市值中位数只有基准的四分之一</text>
+  <text class="card-body" x="385" y="360">这段超额来自第20章讲的规模下沉，</text>
+  <text class="card-body" x="385" y="382">不是选股能力。大盘风格占优的年份</text>
+  <text class="card-body" x="385" y="404">（例如 2024 年上证50 涨 15.4%、</text>
+  <text class="card-body" x="385" y="426">中证500 只涨 5.5%）它会反过来。</text>
+
+  <rect class="card" x="707" y="300" width="203" height="176" rx="12"/>
+  <text class="card-title-stock" x="727" y="332">③ 同一行业里挑得更好</text>
+  <text class="card-body" x="727" y="360">只有这一段不依赖行业</text>
+  <text class="card-body" x="727" y="382">与风格行情，是通常</text>
+  <text class="card-body" x="727" y="404">说的选股能力。</text>
+
+  <text class="foot" x="55" y="510">数值是为了看清结构而设的教学示意，不是某只产品的真实归因。</text>
+  <text class="foot" x="55" y="532">真实分解还要处理权重与个股收益同时偏离产生的交互项与多期平均，方法见第38章。</text>
+</svg>

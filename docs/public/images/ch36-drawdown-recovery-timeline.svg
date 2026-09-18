@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">沪深300 与创业板指的下跌与修复时间线（示意）</title>
+  <desc id="desc">共用一条 2021 年至 2026 年的时间轴。沪深300 在 2021 年 2 月 18 日盘中创出 5930.91 点，2024 年 2 月 2 日盘中最低 3108.35 点，探底用时 1079 个自然日，期间最大回撤 47.59%；从低点到 2026 年 9 月 17 日又过了 958 个自然日，收盘 4460.16 点，仍比高点低 24.80%。创业板指在 2021 年 7 月见高点 3576.12 点，2024 年 2 月最低接近 1483 点，期间最大回撤约 58.5%，到 2026 年 5 月 13 日收于 4038.33 点创出历史新高，前后约 4 年 10 个月。两条线的对比说明：回撤更深的那一个反而先回本，修复快慢没有固定关系。图中为价格指数口径，未计分红。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 25px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .foot { fill: #475569; font-size: 14px; }
+      .lane-title { fill: #0f172a; font-size: 19px; font-weight: 700; }
+      .lane { stroke: #cbd5e1; stroke-width: 3; }
+      .dot { stroke-width: 3; }
+      .dot-hs { fill: #2563eb; stroke: #bfdbfe; }
+      .dot-cy { fill: #7c3aed; stroke: #ddd6fe; }
+      .level { fill: #334155; font-size: 15px; font-weight: 700; }
+      .level-soft { fill: #b91c1c; font-size: 15px; font-weight: 700; }
+      .level-up { fill: #15803d; font-size: 15px; font-weight: 700; }
+      .date { fill: #64748b; font-size: 14px; }
+      .bracket-loss { stroke: #dc2626; stroke-width: 2.2; fill: none; }
+      .bracket-hold { stroke: #b45309; stroke-width: 2.2; fill: none; }
+      .bracket-recover { stroke: #15803d; stroke-width: 2.2; fill: none; }
+      .bracket-label-loss { fill: #b91c1c; font-size: 14px; }
+      .bracket-label-hold { fill: #b45309; font-size: 14px; }
+      .bracket-label-recover { fill: #15803d; font-size: 14px; }
+      .band-loss { fill: #fee2e2; opacity: 0.6; }
+      .band-recover { fill: #dcfce7; opacity: 0.55; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { stroke: #94a3b8; stroke-width: 1.6; }
+      .axis-label { fill: #64748b; font-size: 14px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .foot { fill: #cbd5e1; }
+        .lane-title { fill: #f8fafc; }
+        .lane { stroke: #475569; }
+        .dot-hs { fill: #60a5fa; stroke: #1e3a8a; }
+        .dot-cy { fill: #a78bfa; stroke: #4c1d95; }
+        .level { fill: #e2e8f0; }
+        .level-soft { fill: #fca5a5; }
+        .level-up { fill: #86efac; }
+        .date { fill: #94a3b8; }
+        .bracket-loss { stroke: #f87171; }
+        .bracket-hold { stroke: #fbbf24; }
+        .bracket-recover { stroke: #4ade80; }
+        .bracket-label-loss { fill: #fca5a5; }
+        .bracket-label-hold { fill: #fcd34d; }
+        .bracket-label-recover { fill: #86efac; }
+        .band-loss { fill: #7f1d1d; opacity: 0.3; }
+        .band-recover { fill: #14532d; opacity: 0.32; }
+        .axis { stroke: #64748b; }
+        .tick { stroke: #64748b; }
+        .axis-label { fill: #94a3b8; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="590" rx="24"/>
+  <text class="heading" x="55" y="58">回撤深度只说了一半，另一半是它要走多久</text>
+  <text class="subtle" x="55" y="88">沪深300 与创业板指，共用同一条时间轴｜价格指数口径，未计分红</text>
+
+  <rect class="band-loss" x="110" y="118" width="424" height="390"/>
+  <rect class="band-recover" x="534" y="118" width="376" height="390"/>
+
+  <text class="lane-title" x="110" y="142">沪深300：跌得浅，但今天还没回来</text>
+  <text class="level" x="110" y="174" text-anchor="start">5930.91</text>
+  <text class="level" x="534" y="174" text-anchor="middle">3108.35</text>
+  <text class="level-soft" x="910" y="174" text-anchor="end">4460.16（距高点 −24.80%）</text>
+  <line class="lane" x1="110" y1="200" x2="910" y2="200"/>
+  <circle class="dot dot-hs" cx="110" cy="200" r="7"/>
+  <circle class="dot dot-hs" cx="534" cy="200" r="7"/>
+  <circle class="dot dot-hs" cx="910" cy="200" r="7"/>
+  <text class="date" x="110" y="228" text-anchor="start">2021-02-18 高点</text>
+  <text class="date" x="534" y="228" text-anchor="middle">2024-02-02 低点</text>
+  <text class="date" x="910" y="228" text-anchor="end">2026-09-17 收盘</text>
+
+  <path class="bracket-loss" d="M112 254 H532 M112 246 V262 M532 246 V262"/>
+  <text class="bracket-label-loss" x="112" y="278" text-anchor="start">探底用了 1079 个自然日，期间最大回撤 −47.59%</text>
+  <path class="bracket-hold" d="M536 300 H908 M536 292 V308 M908 292 V308"/>
+  <text class="bracket-label-hold" x="536" y="324" text-anchor="start">从低点算又过了 958 个自然日，仍未收复</text>
+
+  <text class="lane-title" x="110" y="366">创业板指：跌得更深，却已经创新高</text>
+  <text class="level" x="170" y="398" text-anchor="start">3576.12</text>
+  <text class="level" x="534" y="398" text-anchor="middle">约 1483</text>
+  <text class="level-up" x="860" y="398" text-anchor="end">4038.33（历史新高）</text>
+  <line class="lane" x1="110" y1="424" x2="910" y2="424"/>
+  <circle class="dot dot-cy" cx="170" cy="424" r="7"/>
+  <circle class="dot dot-cy" cx="534" cy="424" r="7"/>
+  <circle class="dot dot-cy" cx="860" cy="424" r="7"/>
+  <text class="date" x="170" y="452" text-anchor="start">2021-07 高点</text>
+  <text class="date" x="534" y="452" text-anchor="middle">2024-02 低点</text>
+  <text class="date" x="860" y="452" text-anchor="end">2026-05-13 新高</text>
+
+  <path class="bracket-recover" d="M172 478 H858 M172 470 V486 M858 470 V486"/>
+  <text class="bracket-label-recover" x="172" y="502" text-anchor="start">从高点到收复约 4 年 10 个月，期间最大回撤约 −58.5%</text>
+
+  <line class="axis" x1="110" y1="530" x2="910" y2="530"/>
+  <g class="tick">
+    <line x1="110" y1="530" x2="110" y2="538"/>
+    <line x1="253" y1="530" x2="253" y2="538"/>
+    <line x1="396" y1="530" x2="396" y2="538"/>
+    <line x1="540" y1="530" x2="540" y2="538"/>
+    <line x1="683" y1="530" x2="683" y2="538"/>
+    <line x1="826" y1="530" x2="826" y2="538"/>
+  </g>
+  <text class="axis-label" x="110" y="558" text-anchor="middle">2021</text>
+  <text class="axis-label" x="253" y="558" text-anchor="middle">2022</text>
+  <text class="axis-label" x="396" y="558" text-anchor="middle">2023</text>
+  <text class="axis-label" x="540" y="558" text-anchor="middle">2024</text>
+  <text class="axis-label" x="683" y="558" text-anchor="middle">2025</text>
+  <text class="axis-label" x="826" y="558" text-anchor="middle">2026</text>
+
+  <text class="foot" x="55" y="588">浅红区间是探底期，浅绿区间是从低点开始的修复期；两个指数都是价格指数，不含分红。</text>
+</svg>
