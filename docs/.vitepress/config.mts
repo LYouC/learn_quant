@@ -197,6 +197,14 @@ export default defineConfig({
           {
             text: '第36章 策略绩效分析',
             link: '/chapters/36-strategy-performance-analysis'
+          },
+          {
+            text: '第37章 稳健性与样本外检验',
+            link: '/chapters/37-robustness-and-out-of-sample-testing'
+          },
+          {
+            text: '第38章 基准与策略归因',
+            link: '/chapters/38-benchmark-and-attribution'
           }
         ]
       }

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">同一份持仓在四个宽基基准下的超额收益（示意）</title>
+  <desc id="desc">同一个只做多组合，示意 2025 年收益 30%，在四个真实宽基指数下算出的超额收益分别是：对沪深300 为正 12.34 个百分点，对中证500 为负 0.39 个百分点，对中证1000 为正 2.51 个百分点，对中证2000 为负 6.42 个百分点。四根柱子中两根在零线以上、两根在零线以下，说明只换比较对象就能把“大幅跑赢”变成“明显跑输”，而组合持仓本身没有任何改变。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 24px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .legend-text { fill: #475569; font-size: 14px; }
+      .sw-pos { fill: #b91c1c; }
+      .sw-neg { fill: #15803d; }
+      .grid { stroke: #e2e8f0; stroke-width: 1.2; }
+      .axis-line { stroke: #94a3b8; stroke-width: 1.6; }
+      .zero-line { stroke: #0f172a; stroke-width: 2; }
+      .tick-label { fill: #64748b; font-size: 14px; }
+      .bar-pos { fill: #b91c1c; }
+      .bar-neg { fill: #15803d; }
+      .bar-value-pos { fill: #b91c1c; font-size: 16px; font-weight: 700; }
+      .bar-value-neg { fill: #15803d; font-size: 16px; font-weight: 700; }
+      .axis-name { fill: #334155; font-size: 16px; font-weight: 700; }
+      .axis-sub { fill: #64748b; font-size: 14px; }
+      .foot { fill: #475569; font-size: 14px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .legend-text { fill: #cbd5e1; }
+        .sw-pos { fill: #f87171; }
+        .sw-neg { fill: #4ade80; }
+        .grid { stroke: #334155; }
+        .axis-line { stroke: #64748b; }
+        .zero-line { stroke: #f8fafc; }
+        .tick-label { fill: #94a3b8; }
+        .bar-pos { fill: #f87171; }
+        .bar-neg { fill: #4ade80; }
+        .bar-value-pos { fill: #fca5a5; }
+        .bar-value-neg { fill: #86efac; }
+        .axis-name { fill: #e2e8f0; }
+        .axis-sub { fill: #94a3b8; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="540" rx="24"/>
+  <text class="heading" x="55" y="58">换个基准，同一份持仓的超额就从正变负</text>
+  <text class="subtle" x="55" y="88">示意｜组合 2025 年收益 30%，四个基准均为当年真实涨幅（Wind 数据）</text>
+
+  <rect class="sw-pos" x="600" y="48" width="14" height="14" rx="3"/>
+  <text class="legend-text" x="622" y="60">超额为正＝跑赢</text>
+  <rect class="sw-neg" x="748" y="48" width="14" height="14" rx="3"/>
+  <text class="legend-text" x="770" y="60">超额为负＝跑输</text>
+
+  <g class="grid">
+    <line x1="120" y1="170" x2="850" y2="170"/>
+    <line x1="120" y1="220" x2="850" y2="220"/>
+    <line x1="120" y1="270" x2="850" y2="270"/>
+    <line x1="120" y1="370" x2="850" y2="370"/>
+    <line x1="120" y1="420" x2="850" y2="420"/>
+  </g>
+  <g class="tick-label">
+    <text x="110" y="175" text-anchor="end">+15</text>
+    <text x="110" y="225" text-anchor="end">+10</text>
+    <text x="110" y="275" text-anchor="end">+5</text>
+    <text x="110" y="325" text-anchor="end">0</text>
+    <text x="110" y="375" text-anchor="end">−5</text>
+    <text x="110" y="425" text-anchor="end">−10</text>
+  </g>
+  <text class="tick-label" x="120" y="148">个百分点</text>
+  <line class="axis-line" x1="120" y1="160" x2="120" y2="420"/>
+  <line class="zero-line" x1="120" y1="320" x2="850" y2="320"/>
+
+  <rect class="bar-pos" x="165" y="197" width="130" height="123" rx="6"/>
+  <text class="bar-value-pos" x="230" y="187" text-anchor="middle">+12.34</text>
+
+  <rect class="bar-neg" x="345" y="320" width="130" height="4" rx="2"/>
+  <text class="bar-value-neg" x="410" y="342" text-anchor="middle">−0.39</text>
+
+  <rect class="bar-pos" x="525" y="295" width="130" height="25" rx="6"/>
+  <text class="bar-value-pos" x="590" y="285" text-anchor="middle">+2.51</text>
+
+  <rect class="bar-neg" x="705" y="320" width="130" height="64" rx="6"/>
+  <text class="bar-value-neg" x="770" y="402" text-anchor="middle">−6.42</text>
+
+  <text class="axis-name" x="230" y="448" text-anchor="middle">沪深300</text>
+  <text class="axis-sub" x="230" y="470" text-anchor="middle">涨 17.66%</text>
+  <text class="axis-name" x="410" y="448" text-anchor="middle">中证500</text>
+  <text class="axis-sub" x="410" y="470" text-anchor="middle">涨 30.39%</text>
+  <text class="axis-name" x="590" y="448" text-anchor="middle">中证1000</text>
+  <text class="axis-sub" x="590" y="470" text-anchor="middle">涨 27.49%</text>
+  <text class="axis-name" x="770" y="448" text-anchor="middle">中证2000</text>
+  <text class="axis-sub" x="770" y="470" text-anchor="middle">涨 36.42%</text>
+
+  <text class="foot" x="55" y="505">柱子过零线的那一刻，结论就从“跑赢”翻成“跑输”，而组合一个字都没改。</text>
+  <text class="foot" x="55" y="527">组合收益 30% 为教学示意；四个指数的涨幅是 2025 年真实数据，按区间首尾收盘价计算。</text>
+</svg>

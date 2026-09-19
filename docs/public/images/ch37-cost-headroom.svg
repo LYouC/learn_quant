@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 545" role="img" aria-labelledby="title desc">
+  <title id="title">同一个 0.15% 成本假设在两套换手率方案里占掉的盈亏平衡空间（示意）</title>
+  <desc id="desc">示意数据，毛超额固定为年化 4%。横轴是单次成本，即每一元成交金额的综合成本。第一行是月调 12 次的方案，年双边换手 480%，能承受的最高单次成本是 0.83%：假设的 0.15% 只占掉约 18%，余下 0.68 个百分点的余地，上限是假设值的约 5.5 倍。第二行是周调 52 次的方案，年双边换手 2080%，能承受的最高单次成本只有 0.19%：假设的 0.15% 已经占掉约 79%，余下只有 0.04 个百分点，成本再涨三成超额就归零。两套方案除调仓节奏外完全相同，每次双边换手都是 40%。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 24px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 14px; }
+      .row-title { fill: #0f172a; font-size: 15px; font-weight: 700; }
+      .row-sub { fill: #64748b; font-size: 13px; }
+      .seg-used { fill: #dbeafe; stroke: #60a5fa; stroke-width: 1.6; }
+      .seg-room { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1.6; }
+      .seg-label { fill: #0f172a; font-size: 13px; }
+      .end-label { fill: #0f172a; font-size: 15px; font-weight: 700; }
+      .callout { fill: #b45309; font-size: 13px; }
+      .leader { stroke: #b45309; stroke-width: 1.4; fill: none; }
+      .axis { stroke: #94a3b8; stroke-width: 2; }
+      .tick { stroke: #94a3b8; stroke-width: 1.6; }
+      .axis-label { fill: #64748b; font-size: 12px; }
+      .axis-title { fill: #475569; font-size: 13px; }
+      .legend-text { fill: #334155; font-size: 13px; }
+      .foot { fill: #475569; font-size: 13px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .row-title { fill: #f8fafc; }
+        .row-sub { fill: #94a3b8; }
+        .seg-used { fill: #1e3a8a; stroke: #60a5fa; }
+        .seg-room { fill: #78350f; stroke: #fbbf24; }
+        .seg-label { fill: #f8fafc; }
+        .end-label { fill: #f8fafc; }
+        .callout { fill: #fbbf24; }
+        .leader { stroke: #fbbf24; }
+        .axis { stroke: #64748b; }
+        .tick { stroke: #64748b; }
+        .axis-label { fill: #94a3b8; }
+        .axis-title { fill: #cbd5e1; }
+        .legend-text { fill: #e2e8f0; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="515" rx="24"/>
+  <text class="heading" x="55" y="58">同一个 0.15%，在两套换手率里剩的余地完全不同</text>
+  <text class="subtle" x="55" y="88">横轴：单次成本（每一元成交金额的综合成本）｜条形长度＝该方案的盈亏平衡点 c*｜示意数据，毛超额按年化 4% 计</text>
+
+  <text class="row-title" x="280" y="155" text-anchor="end">月调 12 次</text>
+  <text class="row-sub" x="280" y="177" text-anchor="end">年双边换手 480%</text>
+  <text class="end-label" x="890" y="126" text-anchor="end">c* = 0.83%（成本上限）</text>
+  <rect class="seg-used" x="300" y="136" width="107" height="48" rx="6"/>
+  <rect class="seg-room" x="407" y="136" width="483" height="48" rx="6"/>
+  <text class="seg-label" x="353" y="166" text-anchor="middle">0.15%</text>
+  <text class="seg-label" x="648" y="166" text-anchor="middle">余量 0.68%：上限是假设的约 5.5 倍</text>
+
+  <text class="row-title" x="280" y="251" text-anchor="end">周调 52 次</text>
+  <text class="row-sub" x="280" y="273" text-anchor="end">年双边换手 2080%</text>
+  <text class="end-label" x="435" y="222" text-anchor="end">c* = 0.19%（成本上限）</text>
+  <rect class="seg-used" x="300" y="232" width="107" height="48" rx="6"/>
+  <rect class="seg-room" x="407" y="232" width="28" height="48" rx="6"/>
+  <text class="seg-label" x="353" y="262" text-anchor="middle">0.15%</text>
+  <line class="leader" x1="437" y1="256" x2="453" y2="256"/>
+  <text class="callout" x="459" y="262">余量只剩 0.04%：成本再涨三成，超额归零</text>
+
+  <line class="axis" x1="300" y1="312" x2="940" y2="312"/>
+  <g class="tick">
+    <line x1="300" y1="312" x2="300" y2="320"/>
+    <line x1="407" y1="312" x2="407" y2="320"/>
+    <line x1="513" y1="312" x2="513" y2="320"/>
+    <line x1="620" y1="312" x2="620" y2="320"/>
+    <line x1="727" y1="312" x2="727" y2="320"/>
+    <line x1="833" y1="312" x2="833" y2="320"/>
+    <line x1="940" y1="312" x2="940" y2="320"/>
+  </g>
+  <text class="axis-label" x="300" y="338" text-anchor="middle">0</text>
+  <text class="axis-label" x="407" y="338" text-anchor="middle">0.15</text>
+  <text class="axis-label" x="513" y="338" text-anchor="middle">0.30</text>
+  <text class="axis-label" x="620" y="338" text-anchor="middle">0.45</text>
+  <text class="axis-label" x="727" y="338" text-anchor="middle">0.60</text>
+  <text class="axis-label" x="833" y="338" text-anchor="middle">0.75</text>
+  <text class="axis-label" x="940" y="338" text-anchor="middle">0.90</text>
+  <text class="axis-title" x="620" y="362" text-anchor="middle">单次成本（%）</text>
+
+  <rect class="seg-used" x="300" y="386" width="26" height="14" rx="3"/>
+  <text class="legend-text" x="334" y="398">0.15% 成本假设（第34章示意口径）</text>
+  <rect class="seg-room" x="620" y="386" width="26" height="14" rx="3"/>
+  <text class="legend-text" x="654" y="398">剩余余地：单次成本还能涨到 c* 而不亏</text>
+
+  <text class="foot" x="55" y="432">条形长度＝该方案的盈亏平衡点 c*，算式是年化毛超额 4% ÷ 年双边换手；0.15% 的假设落在条形内部的蓝色段。</text>
+  <text class="foot" x="55" y="458">两条算式的数值：4% ÷ 480% = 0.83%，4% ÷ 2080% = 0.19%；两套方案除调仓节奏外完全相同，每次双边换手都是 40%。</text>
+  <text class="foot" x="55" y="484">示意数据：未计入冲击成本随资金规模上升（第41章），也未计入提高频率会改变毛超额本身（第34章）。</text>
+</svg>

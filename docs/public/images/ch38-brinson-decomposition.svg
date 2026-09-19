@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 570" role="img" aria-labelledby="title desc">
+  <title id="title">一次超额收益的 Brinson 分解：行业配置、个股选择、交互项（示意）</title>
+  <desc id="desc">把 10.05 个百分点的超额收益切成三块。第一块 7.83 个百分点来自行业配置，即把有色金属的权重从基准的 4% 加到 12%，而该行业当年上涨 94.73%，复制它要求每年押对行业。第二块 1.56 个百分点来自个股选择，即行业权重照抄基准仍然多赚的部分。第三块 0.66 个百分点来自交互项，即超配的行业里恰好也选得更好；若这一项为负，说明行业判断与选股能力在互相拆台。三块之和正好等于超额总额 10.05 个百分点。</desc>
+  <defs>
+    <style>
+      .background { fill: #f8fafc; stroke: #cbd5e1; }
+      .heading { fill: #0f172a; font-size: 24px; font-weight: 700; }
+      .subtle { fill: #64748b; font-size: 15px; }
+      .scale-label { fill: #64748b; font-size: 14px; }
+      .scale-tick { stroke: #94a3b8; stroke-width: 1.6; }
+      .seg-alloc { fill: #b45309; }
+      .seg-select { fill: #4338ca; }
+      .seg-inter { fill: #0f766e; }
+      .seg-label { fill: #ffffff; font-size: 16px; font-weight: 700; }
+      .seg-label-sm { fill: #ffffff; font-size: 15px; font-weight: 700; }
+      .seg-value { fill: #ffffff; font-size: 15px; }
+      .card { fill: #ffffff; stroke: #cbd5e1; }
+      .card-title-alloc { fill: #b45309; font-size: 16px; font-weight: 700; }
+      .card-title-select { fill: #4338ca; font-size: 16px; font-weight: 700; }
+      .card-title-inter { fill: #0f766e; font-size: 16px; font-weight: 700; }
+      .card-body { fill: #475569; font-size: 14px; }
+      .foot { fill: #475569; font-size: 14px; }
+      text { font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif; }
+      @media (prefers-color-scheme: dark) {
+        .background { fill: #111827; stroke: #475569; }
+        .heading { fill: #f8fafc; }
+        .subtle { fill: #94a3b8; }
+        .scale-label { fill: #94a3b8; }
+        .scale-tick { stroke: #64748b; }
+        .seg-alloc { fill: #f59e0b; }
+        .seg-select { fill: #818cf8; }
+        .seg-inter { fill: #2dd4bf; }
+        .seg-label { fill: #0f172a; }
+        .seg-label-sm { fill: #0f172a; }
+        .seg-value { fill: #1e293b; }
+        .card { fill: #1f2937; stroke: #475569; }
+        .card-title-alloc { fill: #fcd34d; }
+        .card-title-select { fill: #a5b4fc; }
+        .card-title-inter { fill: #5eead4; }
+        .card-body { fill: #cbd5e1; }
+        .foot { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+
+  <rect class="background" x="15" y="15" width="970" height="540" rx="24"/>
+  <text class="heading" x="55" y="58">10.05 个百分点的超额，八成来自一次行业押注</text>
+  <text class="subtle" x="55" y="88">示意｜Brinson 分解：行业配置 7.83 ＋ 个股选择 1.56 ＋ 交互项 0.66，单位为百分点</text>
+
+  <text class="scale-label" x="70" y="136" text-anchor="middle">0</text>
+  <text class="scale-label" x="732" y="136" text-anchor="middle">7.83</text>
+  <text class="scale-label" x="864" y="136" text-anchor="middle">9.39</text>
+  <text class="scale-label" x="920" y="136" text-anchor="middle">10.05</text>
+  <g class="scale-tick">
+    <line x1="70" y1="146" x2="70" y2="164"/>
+    <line x1="732" y1="146" x2="732" y2="164"/>
+    <line x1="864" y1="146" x2="864" y2="164"/>
+    <line x1="920" y1="146" x2="920" y2="164"/>
+  </g>
+  <line class="scale-tick" x1="70" y1="164" x2="920" y2="164"/>
+
+  <rect class="seg-alloc" x="70" y="182" width="662" height="80" rx="8"/>
+  <text class="seg-label" x="401" y="216" text-anchor="middle">行业配置</text>
+  <text class="seg-value" x="401" y="242" text-anchor="middle">7.83</text>
+
+  <rect class="seg-select" x="732" y="182" width="132" height="80" rx="8"/>
+  <text class="seg-label" x="798" y="216" text-anchor="middle">个股选择</text>
+  <text class="seg-value" x="798" y="242" text-anchor="middle">1.56</text>
+
+  <rect class="seg-inter" x="864" y="182" width="56" height="80" rx="8"/>
+  <text class="seg-label-sm" x="892" y="216" text-anchor="middle">交互项</text>
+  <text class="seg-value" x="892" y="242" text-anchor="middle">0.66</text>
+
+  <rect class="card" x="70" y="300" width="310" height="176" rx="12"/>
+  <text class="card-title-alloc" x="90" y="332">① 行业配置 7.83 个百分点</text>
+  <text class="card-body" x="90" y="360">多配了当年涨 94.73% 的有色金属，</text>
+  <text class="card-body" x="90" y="382">复制它要求你每年押对行业，</text>
+  <text class="card-body" x="90" y="404">而不是分辨公司。</text>
+
+  <rect class="card" x="395" y="300" width="250" height="176" rx="12"/>
+  <text class="card-title-select" x="415" y="332">② 个股选择 1.56</text>
+  <text class="card-body" x="415" y="360">行业权重照抄基准，</text>
+  <text class="card-body" x="415" y="382">仍然多赚的那部分。</text>
+
+  <rect class="card" x="660" y="300" width="260" height="176" rx="12"/>
+  <text class="card-title-inter" x="680" y="332">③ 交互项 0.66</text>
+  <text class="card-body" x="680" y="360">超配的行业里恰好也选得更好；</text>
+  <text class="card-body" x="680" y="382">若为负，说明行业判断与选股</text>
+  <text class="card-body" x="680" y="404">在互相拆台。</text>
+
+  <text class="foot" x="55" y="510">三块之和 7.83 ＋ 1.56 ＋ 0.66 ＝ 10.05，与超额总额一分不差——这是彻底的切分，不是三种估计。</text>
+  <text class="foot" x="55" y="532">行业收益为 2025 年申万一级真实涨幅；组合的行业权重与行业内选股收益为教学示意。</text>
+</svg>
